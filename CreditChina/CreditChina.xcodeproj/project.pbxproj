@@ -1,0 +1,607 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9BC20A2021FF1B8B00732DE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A1F21FF1B8B00732DE3 /* AppDelegate.m */; };
+		9BC20A2321FF1B8B00732DE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A2221FF1B8B00732DE3 /* ViewController.m */; };
+		9BC20A2621FF1B8B00732DE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20A2421FF1B8B00732DE3 /* Main.storyboard */; };
+		9BC20A2821FF1B8C00732DE3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20A2721FF1B8C00732DE3 /* Assets.xcassets */; };
+		9BC20A2B21FF1B8C00732DE3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20A2921FF1B8C00732DE3 /* LaunchScreen.storyboard */; };
+		9BC20A2E21FF1B8C00732DE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A2D21FF1B8C00732DE3 /* main.m */; };
+		9BC20A3821FF1B8C00732DE3 /* CreditChinaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A3721FF1B8C00732DE3 /* CreditChinaTests.m */; };
+		9BC20A4321FF1B8C00732DE3 /* CreditChinaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A4221FF1B8C00732DE3 /* CreditChinaUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9BC20A3421FF1B8C00732DE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BC20A1321FF1B8B00732DE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BC20A1A21FF1B8B00732DE3;
+			remoteInfo = CreditChina;
+		};
+		9BC20A3F21FF1B8C00732DE3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9BC20A1321FF1B8B00732DE3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9BC20A1A21FF1B8B00732DE3;
+			remoteInfo = CreditChina;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9BC20A1B21FF1B8B00732DE3 /* CreditChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC20A1E21FF1B8B00732DE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9BC20A1F21FF1B8B00732DE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9BC20A2121FF1B8B00732DE3 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		9BC20A2221FF1B8B00732DE3 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		9BC20A2521FF1B8B00732DE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9BC20A2721FF1B8C00732DE3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9BC20A2A21FF1B8C00732DE3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9BC20A2C21FF1B8C00732DE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC20A2D21FF1B8C00732DE3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9BC20A3321FF1B8C00732DE3 /* CreditChinaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditChinaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC20A3721FF1B8C00732DE3 /* CreditChinaTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditChinaTests.m; sourceTree = "<group>"; };
+		9BC20A3921FF1B8C00732DE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC20A3E21FF1B8C00732DE3 /* CreditChinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditChinaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BC20A4221FF1B8C00732DE3 /* CreditChinaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditChinaUITests.m; sourceTree = "<group>"; };
+		9BC20A4421FF1B8C00732DE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9BC20A1821FF1B8B00732DE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC20A3021FF1B8C00732DE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC20A3B21FF1B8C00732DE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9BC20A1221FF1B8B00732DE3 = {
+			isa = PBXGroup;
+			children = (
+				9BC20A1D21FF1B8B00732DE3 /* CreditChina */,
+				9BC20A3621FF1B8C00732DE3 /* CreditChinaTests */,
+				9BC20A4121FF1B8C00732DE3 /* CreditChinaUITests */,
+				9BC20A1C21FF1B8B00732DE3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9BC20A1C21FF1B8B00732DE3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20A1B21FF1B8B00732DE3 /* CreditChina.app */,
+				9BC20A3321FF1B8C00732DE3 /* CreditChinaTests.xctest */,
+				9BC20A3E21FF1B8C00732DE3 /* CreditChinaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9BC20A1D21FF1B8B00732DE3 /* CreditChina */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20A1E21FF1B8B00732DE3 /* AppDelegate.h */,
+				9BC20A1F21FF1B8B00732DE3 /* AppDelegate.m */,
+				9BC20A2121FF1B8B00732DE3 /* ViewController.h */,
+				9BC20A2221FF1B8B00732DE3 /* ViewController.m */,
+				9BC20A2421FF1B8B00732DE3 /* Main.storyboard */,
+				9BC20A2721FF1B8C00732DE3 /* Assets.xcassets */,
+				9BC20A2921FF1B8C00732DE3 /* LaunchScreen.storyboard */,
+				9BC20A2C21FF1B8C00732DE3 /* Info.plist */,
+				9BC20A2D21FF1B8C00732DE3 /* main.m */,
+			);
+			path = CreditChina;
+			sourceTree = "<group>";
+		};
+		9BC20A3621FF1B8C00732DE3 /* CreditChinaTests */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20A3721FF1B8C00732DE3 /* CreditChinaTests.m */,
+				9BC20A3921FF1B8C00732DE3 /* Info.plist */,
+			);
+			path = CreditChinaTests;
+			sourceTree = "<group>";
+		};
+		9BC20A4121FF1B8C00732DE3 /* CreditChinaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20A4221FF1B8C00732DE3 /* CreditChinaUITests.m */,
+				9BC20A4421FF1B8C00732DE3 /* Info.plist */,
+			);
+			path = CreditChinaUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9BC20A1A21FF1B8B00732DE3 /* CreditChina */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BC20A4721FF1B8C00732DE3 /* Build configuration list for PBXNativeTarget "CreditChina" */;
+			buildPhases = (
+				9BC20A1721FF1B8B00732DE3 /* Sources */,
+				9BC20A1821FF1B8B00732DE3 /* Frameworks */,
+				9BC20A1921FF1B8B00732DE3 /* Resources */,
+				9BC20A5021FF1BF200732DE3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CreditChina;
+			productName = CreditChina;
+			productReference = 9BC20A1B21FF1B8B00732DE3 /* CreditChina.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9BC20A3221FF1B8C00732DE3 /* CreditChinaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BC20A4A21FF1B8C00732DE3 /* Build configuration list for PBXNativeTarget "CreditChinaTests" */;
+			buildPhases = (
+				9BC20A2F21FF1B8C00732DE3 /* Sources */,
+				9BC20A3021FF1B8C00732DE3 /* Frameworks */,
+				9BC20A3121FF1B8C00732DE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BC20A3521FF1B8C00732DE3 /* PBXTargetDependency */,
+			);
+			name = CreditChinaTests;
+			productName = CreditChinaTests;
+			productReference = 9BC20A3321FF1B8C00732DE3 /* CreditChinaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9BC20A3D21FF1B8C00732DE3 /* CreditChinaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9BC20A4D21FF1B8D00732DE3 /* Build configuration list for PBXNativeTarget "CreditChinaUITests" */;
+			buildPhases = (
+				9BC20A3A21FF1B8C00732DE3 /* Sources */,
+				9BC20A3B21FF1B8C00732DE3 /* Frameworks */,
+				9BC20A3C21FF1B8C00732DE3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9BC20A4021FF1B8C00732DE3 /* PBXTargetDependency */,
+			);
+			name = CreditChinaUITests;
+			productName = CreditChinaUITests;
+			productReference = 9BC20A3E21FF1B8C00732DE3 /* CreditChinaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9BC20A1321FF1B8B00732DE3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = wanglei;
+				TargetAttributes = {
+					9BC20A1A21FF1B8B00732DE3 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					9BC20A3221FF1B8C00732DE3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9BC20A1A21FF1B8B00732DE3;
+					};
+					9BC20A3D21FF1B8C00732DE3 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 9BC20A1A21FF1B8B00732DE3;
+					};
+				};
+			};
+			buildConfigurationList = 9BC20A1621FF1B8B00732DE3 /* Build configuration list for PBXProject "CreditChina" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9BC20A1221FF1B8B00732DE3;
+			productRefGroup = 9BC20A1C21FF1B8B00732DE3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9BC20A1A21FF1B8B00732DE3 /* CreditChina */,
+				9BC20A3221FF1B8C00732DE3 /* CreditChinaTests */,
+				9BC20A3D21FF1B8C00732DE3 /* CreditChinaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9BC20A1921FF1B8B00732DE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC20A2B21FF1B8C00732DE3 /* LaunchScreen.storyboard in Resources */,
+				9BC20A2821FF1B8C00732DE3 /* Assets.xcassets in Resources */,
+				9BC20A2621FF1B8B00732DE3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC20A3121FF1B8C00732DE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC20A3C21FF1B8C00732DE3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9BC20A5021FF1BF200732DE3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n#!/bin/bash\nbuildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"$INFOPLIST_FILE\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"$INFOPLIST_FILE\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9BC20A1721FF1B8B00732DE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC20A2321FF1B8B00732DE3 /* ViewController.m in Sources */,
+				9BC20A2E21FF1B8C00732DE3 /* main.m in Sources */,
+				9BC20A2021FF1B8B00732DE3 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC20A2F21FF1B8C00732DE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC20A3821FF1B8C00732DE3 /* CreditChinaTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9BC20A3A21FF1B8C00732DE3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9BC20A4321FF1B8C00732DE3 /* CreditChinaUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9BC20A3521FF1B8C00732DE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BC20A1A21FF1B8B00732DE3 /* CreditChina */;
+			targetProxy = 9BC20A3421FF1B8C00732DE3 /* PBXContainerItemProxy */;
+		};
+		9BC20A4021FF1B8C00732DE3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9BC20A1A21FF1B8B00732DE3 /* CreditChina */;
+			targetProxy = 9BC20A3F21FF1B8C00732DE3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9BC20A2421FF1B8B00732DE3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC20A2521FF1B8B00732DE3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9BC20A2921FF1B8C00732DE3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9BC20A2A21FF1B8C00732DE3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9BC20A4521FF1B8C00732DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		9BC20A4621FF1B8C00732DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9BC20A4821FF1B8C00732DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL27D9E52C;
+				INFOPLIST_FILE = CreditChina/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wanglei.CreditChina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		9BC20A4921FF1B8C00732DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL27D9E52C;
+				INFOPLIST_FILE = CreditChina/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wanglei.CreditChina;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		9BC20A4B21FF1B8D00732DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL27D9E52C;
+				INFOPLIST_FILE = CreditChinaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wanglei.CreditChinaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CreditChina.app/CreditChina";
+			};
+			name = Debug;
+		};
+		9BC20A4C21FF1B8D00732DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL27D9E52C;
+				INFOPLIST_FILE = CreditChinaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wanglei.CreditChinaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CreditChina.app/CreditChina";
+			};
+			name = Release;
+		};
+		9BC20A4E21FF1B8D00732DE3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL27D9E52C;
+				INFOPLIST_FILE = CreditChinaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wanglei.CreditChinaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CreditChina;
+			};
+			name = Debug;
+		};
+		9BC20A4F21FF1B8D00732DE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = FL27D9E52C;
+				INFOPLIST_FILE = CreditChinaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = wanglei.CreditChinaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CreditChina;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9BC20A1621FF1B8B00732DE3 /* Build configuration list for PBXProject "CreditChina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC20A4521FF1B8C00732DE3 /* Debug */,
+				9BC20A4621FF1B8C00732DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BC20A4721FF1B8C00732DE3 /* Build configuration list for PBXNativeTarget "CreditChina" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC20A4821FF1B8C00732DE3 /* Debug */,
+				9BC20A4921FF1B8C00732DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BC20A4A21FF1B8C00732DE3 /* Build configuration list for PBXNativeTarget "CreditChinaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC20A4B21FF1B8D00732DE3 /* Debug */,
+				9BC20A4C21FF1B8D00732DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9BC20A4D21FF1B8D00732DE3 /* Build configuration list for PBXNativeTarget "CreditChinaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9BC20A4E21FF1B8D00732DE3 /* Debug */,
+				9BC20A4F21FF1B8D00732DE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9BC20A1321FF1B8B00732DE3 /* Project object */;
+}
