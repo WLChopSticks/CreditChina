@@ -16,6 +16,12 @@
 		9BC20A2E21FF1B8C00732DE3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A2D21FF1B8C00732DE3 /* main.m */; };
 		9BC20A3821FF1B8C00732DE3 /* CreditChinaTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A3721FF1B8C00732DE3 /* CreditChinaTests.m */; };
 		9BC20A4321FF1B8C00732DE3 /* CreditChinaUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A4221FF1B8C00732DE3 /* CreditChinaUITests.m */; };
+		9BC20A5522000D8A00732DE3 /* WLLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A5322000D8A00732DE3 /* WLLogInViewController.m */; };
+		9BC20A5622000D8A00732DE3 /* WLLogInViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20A5422000D8A00732DE3 /* WLLogInViewController.xib */; };
+		9BC20A60220017D400732DE3 /* WLBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A5D220017D400732DE3 /* WLBaseNavigationViewController.m */; };
+		9BC20A61220017D400732DE3 /* WLBaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A5E220017D400732DE3 /* WLBaseUIViewController.m */; };
+		9BC20A642200194400732DE3 /* WLCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A632200194400732DE3 /* WLCommonTool.m */; };
+		9BC20A6822001ED900732DE3 /* WLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A6722001ED900732DE3 /* WLHomeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +60,18 @@
 		9BC20A3E21FF1B8C00732DE3 /* CreditChinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditChinaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC20A4221FF1B8C00732DE3 /* CreditChinaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditChinaUITests.m; sourceTree = "<group>"; };
 		9BC20A4421FF1B8C00732DE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BC20A5222000D8A00732DE3 /* WLLogInViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLLogInViewController.h; sourceTree = "<group>"; };
+		9BC20A5322000D8A00732DE3 /* WLLogInViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLLogInViewController.m; sourceTree = "<group>"; };
+		9BC20A5422000D8A00732DE3 /* WLLogInViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLLogInViewController.xib; sourceTree = "<group>"; };
+		9BC20A57220015F100732DE3 /* WLPlatform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLPlatform.h; sourceTree = "<group>"; };
+		9BC20A5A220017D400732DE3 /* WLBaseUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLBaseUIViewController.h; sourceTree = "<group>"; };
+		9BC20A5C220017D400732DE3 /* WLBaseNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLBaseNavigationViewController.h; sourceTree = "<group>"; };
+		9BC20A5D220017D400732DE3 /* WLBaseNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBaseNavigationViewController.m; sourceTree = "<group>"; };
+		9BC20A5E220017D400732DE3 /* WLBaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBaseUIViewController.m; sourceTree = "<group>"; };
+		9BC20A622200194400732DE3 /* WLCommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCommonTool.h; sourceTree = "<group>"; };
+		9BC20A632200194400732DE3 /* WLCommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCommonTool.m; sourceTree = "<group>"; };
+		9BC20A6622001ED900732DE3 /* WLHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLHomeViewController.h; sourceTree = "<group>"; };
+		9BC20A6722001ED900732DE3 /* WLHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLHomeViewController.m; sourceTree = "<group>"; };
 		DD4A422AB8ECC4E7AD688F7F /* Pods-CreditChina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditChina.debug.xcconfig"; path = "Target Support Files/Pods-CreditChina/Pods-CreditChina.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,7 +107,6 @@
 				DD4A422AB8ECC4E7AD688F7F /* Pods-CreditChina.debug.xcconfig */,
 				8E0A1888FD01D43C53A7F67A /* Pods-CreditChina.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -118,6 +135,9 @@
 		9BC20A1D21FF1B8B00732DE3 /* CreditChina */ = {
 			isa = PBXGroup;
 			children = (
+				9BC20A58220017B700732DE3 /* Platform */,
+				9BC20A5122000D3100732DE3 /* 登录 */,
+				9BC20A6522001EAA00732DE3 /* 首页 */,
 				9BC20A1E21FF1B8B00732DE3 /* AppDelegate.h */,
 				9BC20A1F21FF1B8B00732DE3 /* AppDelegate.m */,
 				9BC20A2121FF1B8B00732DE3 /* ViewController.h */,
@@ -147,6 +167,39 @@
 				9BC20A4421FF1B8C00732DE3 /* Info.plist */,
 			);
 			path = CreditChinaUITests;
+			sourceTree = "<group>";
+		};
+		9BC20A5122000D3100732DE3 /* 登录 */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20A5222000D8A00732DE3 /* WLLogInViewController.h */,
+				9BC20A5322000D8A00732DE3 /* WLLogInViewController.m */,
+				9BC20A5422000D8A00732DE3 /* WLLogInViewController.xib */,
+			);
+			path = "登录";
+			sourceTree = "<group>";
+		};
+		9BC20A58220017B700732DE3 /* Platform */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20A57220015F100732DE3 /* WLPlatform.h */,
+				9BC20A5C220017D400732DE3 /* WLBaseNavigationViewController.h */,
+				9BC20A5D220017D400732DE3 /* WLBaseNavigationViewController.m */,
+				9BC20A5A220017D400732DE3 /* WLBaseUIViewController.h */,
+				9BC20A5E220017D400732DE3 /* WLBaseUIViewController.m */,
+				9BC20A622200194400732DE3 /* WLCommonTool.h */,
+				9BC20A632200194400732DE3 /* WLCommonTool.m */,
+			);
+			path = Platform;
+			sourceTree = "<group>";
+		};
+		9BC20A6522001EAA00732DE3 /* 首页 */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20A6622001ED900732DE3 /* WLHomeViewController.h */,
+				9BC20A6722001ED900732DE3 /* WLHomeViewController.m */,
+			);
+			path = "首页";
 			sourceTree = "<group>";
 		};
 		DDCCA9A590C475E30E67E230 /* Frameworks */ = {
@@ -222,6 +275,7 @@
 		9BC20A1321FF1B8B00732DE3 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = WL;
 				LastUpgradeCheck = 1010;
 				ORGANIZATIONNAME = wanglei;
 				TargetAttributes = {
@@ -267,6 +321,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC20A2B21FF1B8C00732DE3 /* LaunchScreen.storyboard in Resources */,
+				9BC20A5622000D8A00732DE3 /* WLLogInViewController.xib in Resources */,
 				9BC20A2821FF1B8C00732DE3 /* Assets.xcassets in Resources */,
 				9BC20A2621FF1B8B00732DE3 /* Main.storyboard in Resources */,
 			);
@@ -357,8 +412,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC20A60220017D400732DE3 /* WLBaseNavigationViewController.m in Sources */,
+				9BC20A642200194400732DE3 /* WLCommonTool.m in Sources */,
 				9BC20A2321FF1B8B00732DE3 /* ViewController.m in Sources */,
+				9BC20A5522000D8A00732DE3 /* WLLogInViewController.m in Sources */,
+				9BC20A6822001ED900732DE3 /* WLHomeViewController.m in Sources */,
 				9BC20A2E21FF1B8C00732DE3 /* main.m in Sources */,
+				9BC20A61220017D400732DE3 /* WLBaseUIViewController.m in Sources */,
 				9BC20A2021FF1B8B00732DE3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

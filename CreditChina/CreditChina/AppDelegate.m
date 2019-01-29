@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "WLLogInViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    self.window = [[UIWindow alloc]init];
+    WLLogInViewController *vc = [[WLLogInViewController alloc]init];
+    self.window.rootViewController = vc;
+    vc.view.backgroundColor = [UIColor whiteColor];
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
