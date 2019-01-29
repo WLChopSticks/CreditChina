@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7BB17B9A6409CA6E79BB1835 /* libPods-CreditChina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EAABDB20D4B2230A562DBB /* libPods-CreditChina.a */; };
 		9BC20A2021FF1B8B00732DE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A1F21FF1B8B00732DE3 /* AppDelegate.m */; };
 		9BC20A2321FF1B8B00732DE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A2221FF1B8B00732DE3 /* ViewController.m */; };
 		9BC20A2621FF1B8B00732DE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20A2421FF1B8B00732DE3 /* Main.storyboard */; };
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		57EAABDB20D4B2230A562DBB /* libPods-CreditChina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CreditChina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8E0A1888FD01D43C53A7F67A /* Pods-CreditChina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditChina.release.xcconfig"; path = "Target Support Files/Pods-CreditChina/Pods-CreditChina.release.xcconfig"; sourceTree = "<group>"; };
 		9BC20A1B21FF1B8B00732DE3 /* CreditChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC20A1E21FF1B8B00732DE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9BC20A1F21FF1B8B00732DE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -51,6 +54,7 @@
 		9BC20A3E21FF1B8C00732DE3 /* CreditChinaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CreditChinaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC20A4221FF1B8C00732DE3 /* CreditChinaUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CreditChinaUITests.m; sourceTree = "<group>"; };
 		9BC20A4421FF1B8C00732DE3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD4A422AB8ECC4E7AD688F7F /* Pods-CreditChina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditChina.debug.xcconfig"; path = "Target Support Files/Pods-CreditChina/Pods-CreditChina.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7BB17B9A6409CA6E79BB1835 /* libPods-CreditChina.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4E2FB17303E1D1722E72CF9D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD4A422AB8ECC4E7AD688F7F /* Pods-CreditChina.debug.xcconfig */,
+				8E0A1888FD01D43C53A7F67A /* Pods-CreditChina.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9BC20A1221FF1B8B00732DE3 = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +100,8 @@
 				9BC20A3621FF1B8C00732DE3 /* CreditChinaTests */,
 				9BC20A4121FF1B8C00732DE3 /* CreditChinaUITests */,
 				9BC20A1C21FF1B8B00732DE3 /* Products */,
+				4E2FB17303E1D1722E72CF9D /* Pods */,
+				DDCCA9A590C475E30E67E230 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -132,6 +149,14 @@
 			path = CreditChinaUITests;
 			sourceTree = "<group>";
 		};
+		DDCCA9A590C475E30E67E230 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				57EAABDB20D4B2230A562DBB /* libPods-CreditChina.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,10 +164,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9BC20A4721FF1B8C00732DE3 /* Build configuration list for PBXNativeTarget "CreditChina" */;
 			buildPhases = (
+				33D795CCEB9669334DFDE2AF /* [CP] Check Pods Manifest.lock */,
 				9BC20A1721FF1B8B00732DE3 /* Sources */,
 				9BC20A1821FF1B8B00732DE3 /* Frameworks */,
 				9BC20A1921FF1B8B00732DE3 /* Resources */,
 				9BC20A5021FF1BF200732DE3 /* ShellScript */,
+				4DCEEDAE270365AB331720F8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -200,19 +227,22 @@
 				TargetAttributes = {
 					9BC20A1A21FF1B8B00732DE3 = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 					};
 					9BC20A3221FF1B8C00732DE3 = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 9BC20A1A21FF1B8B00732DE3;
 					};
 					9BC20A3D21FF1B8C00732DE3 = {
 						CreatedOnToolsVersion = 10.1;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 9BC20A1A21FF1B8B00732DE3;
 					};
 				};
 			};
 			buildConfigurationList = 9BC20A1621FF1B8B00732DE3 /* Build configuration list for PBXProject "CreditChina" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -259,6 +289,50 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		33D795CCEB9669334DFDE2AF /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CreditChina-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DCEEDAE270365AB331720F8 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-CreditChina/Pods-CreditChina-resources.sh",
+				"${PODS_ROOT}/ProgressHUD/ProgressHUD/ProgressHUD/ProgressHUD.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/ProgressHUD.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-CreditChina/Pods-CreditChina-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9BC20A5021FF1BF200732DE3 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -454,16 +528,14 @@
 		};
 		9BC20A4821FF1B8C00732DE3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD4A422AB8ECC4E7AD688F7F /* Pods-CreditChina.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FL27D9E52C;
 				INFOPLIST_FILE = CreditChina/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wanglei.CreditChina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -472,16 +544,14 @@
 		};
 		9BC20A4921FF1B8C00732DE3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E0A1888FD01D43C53A7F67A /* Pods-CreditChina.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FL27D9E52C;
 				INFOPLIST_FILE = CreditChina/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wanglei.CreditChina;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
@@ -495,11 +565,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FL27D9E52C;
 				INFOPLIST_FILE = CreditChinaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wanglei.CreditChinaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -514,11 +580,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FL27D9E52C;
 				INFOPLIST_FILE = CreditChinaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wanglei.CreditChinaTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -532,11 +594,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FL27D9E52C;
 				INFOPLIST_FILE = CreditChinaUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wanglei.CreditChinaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -550,11 +608,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = FL27D9E52C;
 				INFOPLIST_FILE = CreditChinaUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = wanglei.CreditChinaUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
