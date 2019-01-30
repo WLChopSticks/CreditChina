@@ -9,13 +9,13 @@
 #import "AppDelegate.h"
 #import "WLLogInViewController.h"
 #import "WLNewFeatureViewController.h"
-#import "WLBootViewController.h"
 #import "WLProfileViewController.h"
 #import "WLProfileCreditViewController.h"
 #import "WLUserFocusViewController.h"
 #import "WLExhibitonViewController.h"
 #import "WLBaseNavigationViewController.h"
 #import "WLBaseTabBarViewController.h"
+
 
 @interface AppDelegate ()
 
@@ -27,7 +27,6 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]init];
-    
     WLExhibitonViewController *exhibitionVC = [[WLExhibitonViewController alloc]init];
     exhibitionVC.title = @"首页";
     WLBaseNavigationViewController *nav1 = [[WLBaseNavigationViewController alloc]initWithRootViewController:exhibitionVC];
@@ -47,8 +46,20 @@
     WLBaseTabBarViewController *tabVC = [[WLBaseTabBarViewController alloc]init];
     tabVC.viewControllers = @[nav1, nav2, nav3, nav4];
     
-    self.window.rootViewController = tabVC;
-    [self.window makeKeyAndVisible];
+    NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+    if ([[defaults objectForKey:@"old_enter"]boolValue] == YES)
+    {
+        self.window.rootViewController = tabVC;
+        [self.window makeKeyAndVisible];
+    }else
+    {
+        WLNewFeatureViewController *newFeatureVC = [[WLNewFeatureViewController alloc]init];
+        newFeatureVC.rootVC = tabVC;
+        self.window.rootViewController = newFeatureVC;
+        [self.window makeKeyWindow];
+    }
+    
+    
     
     return YES;
 }

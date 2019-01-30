@@ -7,7 +7,6 @@
 //
 
 #import "WLNewFeatureViewController.h"
-#import "WLHomeViewController.h"
 
 @interface WLNewFeatureViewController ()<UIScrollViewDelegate>
 
@@ -53,8 +52,10 @@
 - (void)enterBtnDidClicking
 {
     NSLog(@"立即体验按钮点击了");
-    WLHomeViewController *vc = [[WLHomeViewController alloc]init];
-    [self presentViewController:vc animated:YES completion:nil];
+    [[UIApplication sharedApplication]delegate].window.rootViewController = self.rootVC;
+    [[[UIApplication sharedApplication]delegate].window makeKeyWindow];
+    [[NSUserDefaults standardUserDefaults]setObject:[NSNumber numberWithBool:YES] forKey:@"old_enter"];
+
 }
 
 

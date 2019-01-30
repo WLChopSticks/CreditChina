@@ -7,10 +7,13 @@
 //
 
 #import "WLBaseUIViewController.h"
+#import "WLBaseTabBarViewController.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 @interface WLNewFeatureViewController : WLBaseUIViewController
+
+@property (nonatomic, strong) WLBaseTabBarViewController *rootVC;
 
 @end
 
