@@ -1,18 +1,18 @@
 //
-//  WLHomeViewController.m
+//  WLExhibitonViewController.m
 //  CreditChina
 //
-//  Created by 王磊 on 2019/1/29.
+//  Created by 王磊 on 2019/1/30.
 //  Copyright © 2019 wanglei. All rights reserved.
 //
 
-#import "WLHomeViewController.h"
+#import "WLExhibitonViewController.h"
 
-@interface WLHomeViewController ()
+@interface WLExhibitonViewController ()
 
 @end
 
-@implementation WLHomeViewController
+@implementation WLExhibitonViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

@@ -1,8 +1,8 @@
 //
-//  WLHomeViewController.h
+//  WLExhibitonViewController.h
 //  CreditChina
 //
-//  Created by 王磊 on 2019/1/29.
+//  Created by 王磊 on 2019/1/30.
 //  Copyright © 2019 wanglei. All rights reserved.
 //
 
@@ -10,7 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WLHomeViewController : WLBaseUIViewController
+@interface WLExhibitonViewController : WLBaseUIViewController
 
 @end
 

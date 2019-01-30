@@ -21,7 +21,12 @@
 		9BC20A60220017D400732DE3 /* WLBaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A5D220017D400732DE3 /* WLBaseNavigationViewController.m */; };
 		9BC20A61220017D400732DE3 /* WLBaseUIViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A5E220017D400732DE3 /* WLBaseUIViewController.m */; };
 		9BC20A642200194400732DE3 /* WLCommonTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A632200194400732DE3 /* WLCommonTool.m */; };
-		9BC20A6822001ED900732DE3 /* WLHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A6722001ED900732DE3 /* WLHomeViewController.m */; };
+		9BC20BB82201804200732DE3 /* WLNewFeatureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BB72201804200732DE3 /* WLNewFeatureViewController.m */; };
+		9BC20BBB2201848B00732DE3 /* WLBaseTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BBA2201848B00732DE3 /* WLBaseTabBarViewController.m */; };
+		9BC20BC1220187B400732DE3 /* WLUserFocusViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BC0220187B400732DE3 /* WLUserFocusViewController.m */; };
+		9BC20BC4220187D000732DE3 /* WLProfileCreditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BC3220187D000732DE3 /* WLProfileCreditViewController.m */; };
+		9BC20BC7220187E400732DE3 /* WLProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BC6220187E400732DE3 /* WLProfileViewController.m */; };
+		9BC20BCA2201886D00732DE3 /* WLExhibitonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BC92201886D00732DE3 /* WLExhibitonViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,8 +75,18 @@
 		9BC20A5E220017D400732DE3 /* WLBaseUIViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLBaseUIViewController.m; sourceTree = "<group>"; };
 		9BC20A622200194400732DE3 /* WLCommonTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLCommonTool.h; sourceTree = "<group>"; };
 		9BC20A632200194400732DE3 /* WLCommonTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WLCommonTool.m; sourceTree = "<group>"; };
-		9BC20A6622001ED900732DE3 /* WLHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLHomeViewController.h; sourceTree = "<group>"; };
-		9BC20A6722001ED900732DE3 /* WLHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLHomeViewController.m; sourceTree = "<group>"; };
+		9BC20BB62201804200732DE3 /* WLNewFeatureViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLNewFeatureViewController.h; sourceTree = "<group>"; };
+		9BC20BB72201804200732DE3 /* WLNewFeatureViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLNewFeatureViewController.m; sourceTree = "<group>"; };
+		9BC20BB92201848B00732DE3 /* WLBaseTabBarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLBaseTabBarViewController.h; sourceTree = "<group>"; };
+		9BC20BBA2201848B00732DE3 /* WLBaseTabBarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLBaseTabBarViewController.m; sourceTree = "<group>"; };
+		9BC20BBF220187B400732DE3 /* WLUserFocusViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLUserFocusViewController.h; sourceTree = "<group>"; };
+		9BC20BC0220187B400732DE3 /* WLUserFocusViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLUserFocusViewController.m; sourceTree = "<group>"; };
+		9BC20BC2220187D000732DE3 /* WLProfileCreditViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLProfileCreditViewController.h; sourceTree = "<group>"; };
+		9BC20BC3220187D000732DE3 /* WLProfileCreditViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLProfileCreditViewController.m; sourceTree = "<group>"; };
+		9BC20BC5220187E400732DE3 /* WLProfileViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLProfileViewController.h; sourceTree = "<group>"; };
+		9BC20BC6220187E400732DE3 /* WLProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLProfileViewController.m; sourceTree = "<group>"; };
+		9BC20BC82201886D00732DE3 /* WLExhibitonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLExhibitonViewController.h; sourceTree = "<group>"; };
+		9BC20BC92201886D00732DE3 /* WLExhibitonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLExhibitonViewController.m; sourceTree = "<group>"; };
 		DD4A422AB8ECC4E7AD688F7F /* Pods-CreditChina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditChina.debug.xcconfig"; path = "Target Support Files/Pods-CreditChina/Pods-CreditChina.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -138,6 +153,10 @@
 				9BC20A58220017B700732DE3 /* Platform */,
 				9BC20A5122000D3100732DE3 /* 登录 */,
 				9BC20A6522001EAA00732DE3 /* 首页 */,
+				9BC20BCB22018BBB00732DE3 /* 用户关注管理 */,
+				9BC20BB52201801A00732DE3 /* 新特性 */,
+				9BC20BCC22018BD000732DE3 /* 个人信用管理 */,
+				9BC20BCD22018BE000732DE3 /* 个人 */,
 				9BC20A1E21FF1B8B00732DE3 /* AppDelegate.h */,
 				9BC20A1F21FF1B8B00732DE3 /* AppDelegate.m */,
 				9BC20A2121FF1B8B00732DE3 /* ViewController.h */,
@@ -187,6 +206,8 @@
 				9BC20A5D220017D400732DE3 /* WLBaseNavigationViewController.m */,
 				9BC20A5A220017D400732DE3 /* WLBaseUIViewController.h */,
 				9BC20A5E220017D400732DE3 /* WLBaseUIViewController.m */,
+				9BC20BB92201848B00732DE3 /* WLBaseTabBarViewController.h */,
+				9BC20BBA2201848B00732DE3 /* WLBaseTabBarViewController.m */,
 				9BC20A622200194400732DE3 /* WLCommonTool.h */,
 				9BC20A632200194400732DE3 /* WLCommonTool.m */,
 			);
@@ -196,10 +217,46 @@
 		9BC20A6522001EAA00732DE3 /* 首页 */ = {
 			isa = PBXGroup;
 			children = (
-				9BC20A6622001ED900732DE3 /* WLHomeViewController.h */,
-				9BC20A6722001ED900732DE3 /* WLHomeViewController.m */,
+				9BC20BC82201886D00732DE3 /* WLExhibitonViewController.h */,
+				9BC20BC92201886D00732DE3 /* WLExhibitonViewController.m */,
 			);
 			path = "首页";
+			sourceTree = "<group>";
+		};
+		9BC20BB52201801A00732DE3 /* 新特性 */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20BB62201804200732DE3 /* WLNewFeatureViewController.h */,
+				9BC20BB72201804200732DE3 /* WLNewFeatureViewController.m */,
+			);
+			path = "新特性";
+			sourceTree = "<group>";
+		};
+		9BC20BCB22018BBB00732DE3 /* 用户关注管理 */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20BBF220187B400732DE3 /* WLUserFocusViewController.h */,
+				9BC20BC0220187B400732DE3 /* WLUserFocusViewController.m */,
+			);
+			path = "用户关注管理";
+			sourceTree = "<group>";
+		};
+		9BC20BCC22018BD000732DE3 /* 个人信用管理 */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20BC2220187D000732DE3 /* WLProfileCreditViewController.h */,
+				9BC20BC3220187D000732DE3 /* WLProfileCreditViewController.m */,
+			);
+			path = "个人信用管理";
+			sourceTree = "<group>";
+		};
+		9BC20BCD22018BE000732DE3 /* 个人 */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20BC5220187E400732DE3 /* WLProfileViewController.h */,
+				9BC20BC6220187E400732DE3 /* WLProfileViewController.m */,
+			);
+			path = "个人";
 			sourceTree = "<group>";
 		};
 		DDCCA9A590C475E30E67E230 /* Frameworks */ = {
@@ -414,10 +471,15 @@
 			files = (
 				9BC20A60220017D400732DE3 /* WLBaseNavigationViewController.m in Sources */,
 				9BC20A642200194400732DE3 /* WLCommonTool.m in Sources */,
+				9BC20BBB2201848B00732DE3 /* WLBaseTabBarViewController.m in Sources */,
 				9BC20A2321FF1B8B00732DE3 /* ViewController.m in Sources */,
+				9BC20BC7220187E400732DE3 /* WLProfileViewController.m in Sources */,
 				9BC20A5522000D8A00732DE3 /* WLLogInViewController.m in Sources */,
-				9BC20A6822001ED900732DE3 /* WLHomeViewController.m in Sources */,
+				9BC20BCA2201886D00732DE3 /* WLExhibitonViewController.m in Sources */,
+				9BC20BC4220187D000732DE3 /* WLProfileCreditViewController.m in Sources */,
+				9BC20BC1220187B400732DE3 /* WLUserFocusViewController.m in Sources */,
 				9BC20A2E21FF1B8C00732DE3 /* main.m in Sources */,
+				9BC20BB82201804200732DE3 /* WLNewFeatureViewController.m in Sources */,
 				9BC20A61220017D400732DE3 /* WLBaseUIViewController.m in Sources */,
 				9BC20A2021FF1B8B00732DE3 /* AppDelegate.m in Sources */,
 			);

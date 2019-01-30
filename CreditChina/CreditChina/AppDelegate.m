@@ -8,6 +8,14 @@
 
 #import "AppDelegate.h"
 #import "WLLogInViewController.h"
+#import "WLNewFeatureViewController.h"
+#import "WLBootViewController.h"
+#import "WLProfileViewController.h"
+#import "WLProfileCreditViewController.h"
+#import "WLUserFocusViewController.h"
+#import "WLExhibitonViewController.h"
+#import "WLBaseNavigationViewController.h"
+#import "WLBaseTabBarViewController.h"
 
 @interface AppDelegate ()
 
@@ -19,9 +27,27 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]init];
-    WLLogInViewController *vc = [[WLLogInViewController alloc]init];
-    self.window.rootViewController = vc;
-    vc.view.backgroundColor = [UIColor whiteColor];
+    
+    WLExhibitonViewController *exhibitionVC = [[WLExhibitonViewController alloc]init];
+    exhibitionVC.title = @"首页";
+    WLBaseNavigationViewController *nav1 = [[WLBaseNavigationViewController alloc]initWithRootViewController:exhibitionVC];
+    
+    WLUserFocusViewController *userFocusVC = [[WLUserFocusViewController alloc]init];
+    userFocusVC.title = @"用户关注";
+    WLBaseNavigationViewController *nav2 = [[WLBaseNavigationViewController alloc]initWithRootViewController:userFocusVC];
+    
+    WLProfileViewController *profileVC = [[WLProfileViewController alloc]init];
+    profileVC.title = @"个人信用";
+    WLBaseNavigationViewController *nav3 = [[WLBaseNavigationViewController alloc]initWithRootViewController:profileVC];
+    
+    WLProfileCreditViewController *profileCreditVC = [[WLProfileCreditViewController alloc]init];
+    profileCreditVC.title = @"我的";
+    WLBaseNavigationViewController *nav4 = [[WLBaseNavigationViewController alloc]initWithRootViewController:profileCreditVC];
+    
+    WLBaseTabBarViewController *tabVC = [[WLBaseTabBarViewController alloc]init];
+    tabVC.viewControllers = @[nav1, nav2, nav3, nav4];
+    
+    self.window.rootViewController = tabVC;
     [self.window makeKeyAndVisible];
     
     return YES;
