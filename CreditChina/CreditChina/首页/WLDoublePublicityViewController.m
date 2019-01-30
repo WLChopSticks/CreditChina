@@ -1,23 +1,25 @@
 //
-//  WLBaseTabBarViewController.m
+//  WLDoublePublicityViewController.m
 //  CreditChina
 //
 //  Created by 王磊 on 2019/1/30.
 //  Copyright © 2019 wanglei. All rights reserved.
 //
 
-#import "WLBaseTabBarViewController.h"
+#import "WLDoublePublicityViewController.h"
+#import "WLTableView.h"
 
-@interface WLBaseTabBarViewController ()
+@interface WLDoublePublicityViewController ()
 
 @end
 
-@implementation WLBaseTabBarViewController
+@implementation WLDoublePublicityViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    self.view.tintColor = [UIColor redColor];
+    WLTableView *tableView = [[WLTableView alloc]initWithFrame:self.view.bounds];
+    [self.view addSubview:tableView];
 }
 
 /*

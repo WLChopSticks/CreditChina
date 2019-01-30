@@ -9,6 +9,8 @@ pod 'Masonry'
 pod 'ProgressHUD'
 pod 'MJExtension'
 pod 'AFNetworking', '~> 3.0'
+pod 'SDCycleScrollView','~> 1.75'
+pod 'SVGKit'
 
 
 end

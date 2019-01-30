@@ -27,6 +27,13 @@
 		9BC20BC4220187D000732DE3 /* WLProfileCreditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BC3220187D000732DE3 /* WLProfileCreditViewController.m */; };
 		9BC20BC7220187E400732DE3 /* WLProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BC6220187E400732DE3 /* WLProfileViewController.m */; };
 		9BC20BCA2201886D00732DE3 /* WLExhibitonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BC92201886D00732DE3 /* WLExhibitonViewController.m */; };
+		9BC20BD02201919B00732DE3 /* home.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20BCF2201919B00732DE3 /* home.svg */; };
+		9BC20BD22201921500732DE3 /* focus.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20BD12201921500732DE3 /* focus.svg */; };
+		9BC20BD42201921E00732DE3 /* profileCredit.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20BD32201921E00732DE3 /* profileCredit.svg */; };
+		9BC20BD62201922500732DE3 /* profile.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20BD52201922500732DE3 /* profile.svg */; };
+		9BC20BDA22019A5D00732DE3 /* WLScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BD922019A5D00732DE3 /* WLScrollView.m */; };
+		9BC20BDD22019DA700732DE3 /* WLDoublePublicityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BDC22019DA700732DE3 /* WLDoublePublicityViewController.m */; };
+		9BC20BE02201A75D00732DE3 /* WLTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BDF2201A75D00732DE3 /* WLTableView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +94,16 @@
 		9BC20BC6220187E400732DE3 /* WLProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLProfileViewController.m; sourceTree = "<group>"; };
 		9BC20BC82201886D00732DE3 /* WLExhibitonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLExhibitonViewController.h; sourceTree = "<group>"; };
 		9BC20BC92201886D00732DE3 /* WLExhibitonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLExhibitonViewController.m; sourceTree = "<group>"; };
+		9BC20BCF2201919B00732DE3 /* home.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = home.svg; sourceTree = "<group>"; };
+		9BC20BD12201921500732DE3 /* focus.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = focus.svg; sourceTree = "<group>"; };
+		9BC20BD32201921E00732DE3 /* profileCredit.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = profileCredit.svg; sourceTree = "<group>"; };
+		9BC20BD52201922500732DE3 /* profile.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = profile.svg; sourceTree = "<group>"; };
+		9BC20BD822019A5D00732DE3 /* WLScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLScrollView.h; sourceTree = "<group>"; };
+		9BC20BD922019A5D00732DE3 /* WLScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLScrollView.m; sourceTree = "<group>"; };
+		9BC20BDB22019DA700732DE3 /* WLDoublePublicityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLDoublePublicityViewController.h; sourceTree = "<group>"; };
+		9BC20BDC22019DA700732DE3 /* WLDoublePublicityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLDoublePublicityViewController.m; sourceTree = "<group>"; };
+		9BC20BDE2201A75D00732DE3 /* WLTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLTableView.h; sourceTree = "<group>"; };
+		9BC20BDF2201A75D00732DE3 /* WLTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLTableView.m; sourceTree = "<group>"; };
 		DD4A422AB8ECC4E7AD688F7F /* Pods-CreditChina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditChina.debug.xcconfig"; path = "Target Support Files/Pods-CreditChina/Pods-CreditChina.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -150,12 +167,14 @@
 		9BC20A1D21FF1B8B00732DE3 /* CreditChina */ = {
 			isa = PBXGroup;
 			children = (
+				9BC20BD722019A3F00732DE3 /* controls */,
 				9BC20A58220017B700732DE3 /* Platform */,
 				9BC20A5122000D3100732DE3 /* 登录 */,
 				9BC20A6522001EAA00732DE3 /* 首页 */,
 				9BC20BCB22018BBB00732DE3 /* 用户关注管理 */,
 				9BC20BB52201801A00732DE3 /* 新特性 */,
 				9BC20BCC22018BD000732DE3 /* 个人信用管理 */,
+				9BC20BCE2201918B00732DE3 /* resources */,
 				9BC20BCD22018BE000732DE3 /* 个人 */,
 				9BC20A1E21FF1B8B00732DE3 /* AppDelegate.h */,
 				9BC20A1F21FF1B8B00732DE3 /* AppDelegate.m */,
@@ -219,6 +238,8 @@
 			children = (
 				9BC20BC82201886D00732DE3 /* WLExhibitonViewController.h */,
 				9BC20BC92201886D00732DE3 /* WLExhibitonViewController.m */,
+				9BC20BDB22019DA700732DE3 /* WLDoublePublicityViewController.h */,
+				9BC20BDC22019DA700732DE3 /* WLDoublePublicityViewController.m */,
 			);
 			path = "首页";
 			sourceTree = "<group>";
@@ -257,6 +278,28 @@
 				9BC20BC6220187E400732DE3 /* WLProfileViewController.m */,
 			);
 			path = "个人";
+			sourceTree = "<group>";
+		};
+		9BC20BCE2201918B00732DE3 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20BCF2201919B00732DE3 /* home.svg */,
+				9BC20BD12201921500732DE3 /* focus.svg */,
+				9BC20BD32201921E00732DE3 /* profileCredit.svg */,
+				9BC20BD52201922500732DE3 /* profile.svg */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		9BC20BD722019A3F00732DE3 /* controls */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20BD822019A5D00732DE3 /* WLScrollView.h */,
+				9BC20BD922019A5D00732DE3 /* WLScrollView.m */,
+				9BC20BDE2201A75D00732DE3 /* WLTableView.h */,
+				9BC20BDF2201A75D00732DE3 /* WLTableView.m */,
+			);
+			path = controls;
 			sourceTree = "<group>";
 		};
 		DDCCA9A590C475E30E67E230 /* Frameworks */ = {
@@ -377,6 +420,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC20BD42201921E00732DE3 /* profileCredit.svg in Resources */,
+				9BC20BD62201922500732DE3 /* profile.svg in Resources */,
+				9BC20BD02201919B00732DE3 /* home.svg in Resources */,
+				9BC20BD22201921500732DE3 /* focus.svg in Resources */,
 				9BC20A2B21FF1B8C00732DE3 /* LaunchScreen.storyboard in Resources */,
 				9BC20A5622000D8A00732DE3 /* WLLogInViewController.xib in Resources */,
 				9BC20A2821FF1B8C00732DE3 /* Assets.xcassets in Resources */,
@@ -469,6 +516,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BC20BDA22019A5D00732DE3 /* WLScrollView.m in Sources */,
 				9BC20A60220017D400732DE3 /* WLBaseNavigationViewController.m in Sources */,
 				9BC20A642200194400732DE3 /* WLCommonTool.m in Sources */,
 				9BC20BBB2201848B00732DE3 /* WLBaseTabBarViewController.m in Sources */,
@@ -477,10 +525,12 @@
 				9BC20A5522000D8A00732DE3 /* WLLogInViewController.m in Sources */,
 				9BC20BCA2201886D00732DE3 /* WLExhibitonViewController.m in Sources */,
 				9BC20BC4220187D000732DE3 /* WLProfileCreditViewController.m in Sources */,
+				9BC20BDD22019DA700732DE3 /* WLDoublePublicityViewController.m in Sources */,
 				9BC20BC1220187B400732DE3 /* WLUserFocusViewController.m in Sources */,
 				9BC20A2E21FF1B8C00732DE3 /* main.m in Sources */,
 				9BC20BB82201804200732DE3 /* WLNewFeatureViewController.m in Sources */,
 				9BC20A61220017D400732DE3 /* WLBaseUIViewController.m in Sources */,
+				9BC20BE02201A75D00732DE3 /* WLTableView.m in Sources */,
 				9BC20A2021FF1B8B00732DE3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
