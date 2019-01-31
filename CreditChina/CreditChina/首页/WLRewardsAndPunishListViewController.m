@@ -9,6 +9,7 @@
 #import "WLRewardsAndPunishListViewController.h"
 #import "WLTableView.h"
 #import "WLFourItemsCell.h"
+#import <Masonry.h>
 
 @interface WLRewardsAndPunishListViewController ()<wlTableViewDelegate>
 
@@ -25,11 +26,15 @@
 - (void)decorateUI
 {
     self.title = @"联合奖惩名单";
-    WLTableView *tableView = [[WLTableView alloc]initWithFrame:self.view.bounds];
+    WLTableView *tableView = [[WLTableView alloc]init];
     tableView.cellClass = [WLFourItemsCell class];
     tableView.rowsData = @[@{@"公司名":@"234",@"接收时间":@"12",@"接收内容":@"234"},@{@"公司名":@"234",@"接收时间":@"12",@"接收内容":@"234"},@{@"公司名":@"234",@"接收时间":@"12",@"接收内容":@"234"}];
     tableView.delegate = self;
     [self.view addSubview:tableView];
+    
+    [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
 
 -(void)wlTableView:(UITableView *)tableView didSelectCellAtIndexPath:(NSIndexPath *)indexPath

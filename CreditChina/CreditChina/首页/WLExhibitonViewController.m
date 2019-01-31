@@ -85,8 +85,12 @@
         }
         case 1:
         {
-            WLRewardsAndPunishListViewController *vc = [[WLRewardsAndPunishListViewController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+            WLSegmentTableViewController *segVC = [[WLSegmentTableViewController alloc]init];
+            segVC.titles = @[@"红名单",@"黑名单"];
+            WLRewardsAndPunishListViewController *vc1 = [[WLRewardsAndPunishListViewController alloc]init];
+            WLRewardsAndPunishListViewController *vc2 = [[WLRewardsAndPunishListViewController alloc]init];
+            segVC.controllers = @[vc1,vc2];
+            [self.navigationController pushViewController:segVC animated:YES];
             break;
         }
         case 2:
@@ -103,8 +107,14 @@
         }
         case 4:
         {
-            WLNewsViewController *vc = [[WLNewsViewController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+            WLSegmentTableViewController *segVC = [[WLSegmentTableViewController alloc]init];
+            segVC.titles = @[@"国家级",@"省级",@"市级",@"国外"];
+            WLNewsViewController *vc1 = [[WLNewsViewController alloc]init];
+            WLNewsViewController *vc2 = [[WLNewsViewController alloc]init];
+            WLNewsViewController *vc3 = [[WLNewsViewController alloc]init];
+            WLNewsViewController *vc4 = [[WLNewsViewController alloc]init];
+            segVC.controllers = @[vc1,vc2, vc3, vc4];
+            [self.navigationController pushViewController:segVC animated:YES];
             break;
         }
         case 5:

@@ -1,44 +1,40 @@
 //
-//  WLCreditPromiseViewController.m
+//  WLUserFocusTableController.m
 //  CreditChina
 //
 //  Created by 王磊 on 2019/1/31.
 //  Copyright © 2019 wanglei. All rights reserved.
 //
 
-#import "WLCreditPromiseViewController.h"
+#import "WLUserFocusTableController.h"
 #import "WLTableView.h"
 #import "WLFourItemsCell.h"
 #import <Masonry.h>
 
-@interface WLCreditPromiseViewController ()<wlTableViewDelegate>
+@interface WLUserFocusTableController ()
 
 @end
 
-@implementation WLCreditPromiseViewController
+@implementation WLUserFocusTableController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self decorateUI];
+    
 }
 
 - (void)decorateUI
 {
-    self.title = @"信用承诺";
     WLTableView *tableView = [[WLTableView alloc]init];
     tableView.cellClass = [WLFourItemsCell class];
-    tableView.rowsData = @[@{@"公司名":@"234",@"接收时间":@"12",@"接收内容":@"234"},@{@"公司名":@"234",@"接收时间":@"12",@"接收内容":@"234"},@{@"公司名":@"234",@"接收时间":@"12",@"接收内容":@"234"}];
+    tableView.rowsData = @[@{@"标题":@"234",@"内容":@"普通"},@{@"标题":@"234",@"内容":@"普通"},@{@"标题":@"234",@"内容":@"普通"},@{@"标题":@"234",@"内容":@"普通"},@{@"标题":@"234",@"内容":@"普通"}];
     tableView.delegate = self;
     [self.view addSubview:tableView];
+    
     [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.equalTo(self.view);
     }];
-}
-
-- (void)wlTableView:(UITableView *)tableView didSelectCellAtIndexPath:(NSIndexPath *)indexPath
-{
-    NSLog(@"点击了cell %ld", indexPath.row);
 }
 
 /*

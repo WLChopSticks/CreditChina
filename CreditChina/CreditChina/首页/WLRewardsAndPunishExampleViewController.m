@@ -7,8 +7,11 @@
 //
 
 #import "WLRewardsAndPunishExampleViewController.h"
+#import "WLFourItemsCell.h"
+#import "WLTableView.h"
+#import <Masonry.h>
 
-@interface WLRewardsAndPunishExampleViewController ()
+@interface WLRewardsAndPunishExampleViewController ()<wlTableViewDelegate>
 
 @end
 
@@ -23,7 +26,22 @@
 - (void)decorateUI
 {
     self.title = @"联合奖惩案例";
+    WLTableView *tableView = [[WLTableView alloc]init];
+    tableView.cellClass = [WLFourItemsCell class];
+    tableView.rowsData = @[@{@"公司名":@"234",@"审批类别":@"普通",@"许可文件号":@"234",@"许可行政机构":@"234"},@{@"公司名":@"234",@"审批类别":@"普通",@"许可文件号":@"234",@"许可行政机构":@"234"},@{@"公司名":@"234",@"审批类别":@"普通",@"许可文件号":@"234",@"许可行政机构":@"234"},@{@"公司名":@"234",@"审批类别":@"普通",@"许可文件号":@"234",@"许可行政机构":@"234"},@{@"公司名":@"234",@"审批类别":@"普通",@"许可文件号":@"234",@"许可行政机构":@"234"}];
+    tableView.delegate = self;
+    [self.view addSubview:tableView];
+    
+    [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.edges.equalTo(self.view);
+    }];
 }
+
+-(void)wlTableView:(UITableView *)tableView didSelectCellAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"点击了cell %ld", indexPath.row);
+}
+
 
 /*
 #pragma mark - Navigation
