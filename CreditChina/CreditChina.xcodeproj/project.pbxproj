@@ -49,6 +49,9 @@
 		9BC20C192202A7E300732DE3 /* WLQueryCreditInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20C182202A7E300732DE3 /* WLQueryCreditInfoViewController.m */; };
 		9BC20C222202AED400732DE3 /* WLTitleContentTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20C202202AED400732DE3 /* WLTitleContentTimeCell.m */; };
 		9BC20C232202AED400732DE3 /* WLTitleContentTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20C212202AED400732DE3 /* WLTitleContentTimeCell.xib */; };
+		9BC20C2A2202E32000732DE3 /* HGCategoryView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20C272202E32000732DE3 /* HGCategoryView.m */; };
+		9BC20C2B2202E32000732DE3 /* HGSegmentedPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20C292202E32000732DE3 /* HGSegmentedPageViewController.m */; };
+		9BC20C2E2202EFA300732DE3 /* WLSegmentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20C2D2202EFA300732DE3 /* WLSegmentTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -146,6 +149,13 @@
 		9BC20C1F2202AED400732DE3 /* WLTitleContentTimeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLTitleContentTimeCell.h; sourceTree = "<group>"; };
 		9BC20C202202AED400732DE3 /* WLTitleContentTimeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLTitleContentTimeCell.m; sourceTree = "<group>"; };
 		9BC20C212202AED400732DE3 /* WLTitleContentTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLTitleContentTimeCell.xib; sourceTree = "<group>"; };
+		9BC20C252202E31F00732DE3 /* HGSegmentedPageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGSegmentedPageViewController.h; sourceTree = "<group>"; };
+		9BC20C262202E32000732DE3 /* HGPersonalCenterMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGPersonalCenterMacro.h; sourceTree = "<group>"; };
+		9BC20C272202E32000732DE3 /* HGCategoryView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGCategoryView.m; sourceTree = "<group>"; };
+		9BC20C282202E32000732DE3 /* HGCategoryView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HGCategoryView.h; sourceTree = "<group>"; };
+		9BC20C292202E32000732DE3 /* HGSegmentedPageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HGSegmentedPageViewController.m; sourceTree = "<group>"; };
+		9BC20C2C2202EFA300732DE3 /* WLSegmentTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLSegmentTableViewController.h; sourceTree = "<group>"; };
+		9BC20C2D2202EFA300732DE3 /* WLSegmentTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLSegmentTableViewController.m; sourceTree = "<group>"; };
 		DD4A422AB8ECC4E7AD688F7F /* Pods-CreditChina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditChina.debug.xcconfig"; path = "Target Support Files/Pods-CreditChina/Pods-CreditChina.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -283,6 +293,8 @@
 			children = (
 				9BC20BC82201886D00732DE3 /* WLExhibitonViewController.h */,
 				9BC20BC92201886D00732DE3 /* WLExhibitonViewController.m */,
+				9BC20C2C2202EFA300732DE3 /* WLSegmentTableViewController.h */,
+				9BC20C2D2202EFA300732DE3 /* WLSegmentTableViewController.m */,
 				9BC20BDB22019DA700732DE3 /* WLDoublePublicityViewController.h */,
 				9BC20BDC22019DA700732DE3 /* WLDoublePublicityViewController.m */,
 				9BC20C042202A6F000732DE3 /* WLRewardsAndPunishListViewController.h */,
@@ -353,6 +365,7 @@
 		9BC20BD722019A3F00732DE3 /* controls */ = {
 			isa = PBXGroup;
 			children = (
+				9BC20C242202E2FD00732DE3 /* SegmentedPageViewController */,
 				9BC20BE12201C0FD00732DE3 /* WLTableView */,
 				9BC20BF42202899400732DE3 /* WLTableViewCell */,
 				9BC20BD822019A5D00732DE3 /* WLScrollView.h */,
@@ -385,6 +398,18 @@
 				9BC20C212202AED400732DE3 /* WLTitleContentTimeCell.xib */,
 			);
 			path = WLTableViewCell;
+			sourceTree = "<group>";
+		};
+		9BC20C242202E2FD00732DE3 /* SegmentedPageViewController */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20C282202E32000732DE3 /* HGCategoryView.h */,
+				9BC20C272202E32000732DE3 /* HGCategoryView.m */,
+				9BC20C262202E32000732DE3 /* HGPersonalCenterMacro.h */,
+				9BC20C252202E31F00732DE3 /* HGSegmentedPageViewController.h */,
+				9BC20C292202E32000732DE3 /* HGSegmentedPageViewController.m */,
+			);
+			path = SegmentedPageViewController;
 			sourceTree = "<group>";
 		};
 		DDCCA9A590C475E30E67E230 /* Frameworks */ = {
@@ -611,6 +636,7 @@
 				9BC20C012202A5B800732DE3 /* WLNetworkTool.m in Sources */,
 				9BC20BEA2201DDE700732DE3 /* WLBaseTableView.m in Sources */,
 				9BC20C192202A7E300732DE3 /* WLQueryCreditInfoViewController.m in Sources */,
+				9BC20C2B2202E32000732DE3 /* HGSegmentedPageViewController.m in Sources */,
 				9BC20A60220017D400732DE3 /* WLBaseNavigationViewController.m in Sources */,
 				9BC20A642200194400732DE3 /* WLCommonTool.m in Sources */,
 				9BC20BBB2201848B00732DE3 /* WLBaseTabBarViewController.m in Sources */,
@@ -620,12 +646,14 @@
 				9BC20BC7220187E400732DE3 /* WLProfileViewController.m in Sources */,
 				9BC20A5522000D8A00732DE3 /* WLLogInViewController.m in Sources */,
 				9BC20C162202A7BC00732DE3 /* WLRelatedPolicyViewController.m in Sources */,
+				9BC20C2A2202E32000732DE3 /* HGCategoryView.m in Sources */,
 				9BC20BCA2201886D00732DE3 /* WLExhibitonViewController.m in Sources */,
 				9BC20BED2201DE4900732DE3 /* WLBaseTableViewCell.m in Sources */,
 				9BC20BC4220187D000732DE3 /* WLProfileCreditViewController.m in Sources */,
 				9BC20C0F2202A77A00732DE3 /* WLNewsViewController.m in Sources */,
 				9BC20BDD22019DA700732DE3 /* WLDoublePublicityViewController.m in Sources */,
 				9BC20C132202A79C00732DE3 /* WLCreditPromiseViewController.m in Sources */,
+				9BC20C2E2202EFA300732DE3 /* WLSegmentTableViewController.m in Sources */,
 				9BC20BF32201E23C00732DE3 /* WLTableView.m in Sources */,
 				9BC20BC1220187B400732DE3 /* WLUserFocusViewController.m in Sources */,
 				9BC20A2E21FF1B8C00732DE3 /* main.m in Sources */,

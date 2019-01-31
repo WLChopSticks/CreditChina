@@ -15,10 +15,11 @@
 #import "WLCreditPromiseViewController.h"
 #import "WLRelatedPolicyViewController.h"
 #import "WLQueryCreditInfoViewController.h"
+#import <SDCycleScrollView.h>
+#import "WLSegmentTableViewController.h"
 
-@interface WLExhibitonViewController ()
+@interface WLExhibitonViewController ()<SDCycleScrollViewDelegate>
 
-@property (nonatomic, strong) NSArray *topViewContents;
 @property (nonatomic, strong) NSArray *functionBtns;
 
 @end
@@ -34,18 +35,15 @@
 
 - (void)decorateUI
 {
-    UIScrollView *topView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, Screen_Width, Screen_Height * 0.2)];
-    topView.pagingEnabled = YES;
-    topView.contentSize = CGSizeMake(Screen_Width * self.topViewContents.count, topView.frame.size.height);
-    topView.backgroundColor = [UIColor redColor];
+//    UIScrollView *topView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, Screen_Width, Screen_Height * 0.2)];
+    SDCycleScrollView *topView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, Screen_Width, Screen_Height * 0.25) delegate:self placeholderImage:[UIImage imageNamed:@"temp"]];
+    NSArray *imagesURLStrings = @[
+                                  @"https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a4b3d7085dee3d6d2293d48b252b5910/0e2442a7d933c89524cd5cd4d51373f0830200ea.jpg",
+                                  @"https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a41eb338dd33c895a62bcb3bb72e47c2/5fdf8db1cb134954a2192ccb524e9258d1094a1e.jpg",
+                                  @"http://c.hiphotos.baidu.com/image/w%3D400/sign=c2318ff84334970a4773112fa5c8d1c0/b7fd5266d0160924c1fae5ccd60735fae7cd340d.jpg"
+                                  ];
+    topView.imageURLStringsGroup = imagesURLStrings;
     [self.view addSubview:topView];
-    
-    for (int i = 0; i < self.topViewContents.count; i++)
-    {
-        UIButton *contentBtn = [[UIButton alloc]initWithFrame:CGRectMake(i * Screen_Width, 0, Screen_Width, topView.frame.size.height)];
-        contentBtn.backgroundColor = self.topViewContents[i];
-        [topView addSubview:contentBtn];
-    }
     
     UIView *functionView = [[UIView alloc]initWithFrame:CGRectMake(0, topView.frame.size.height, Screen_Width, Screen_Height - topView.frame.size.height)];
     [self.view addSubview:functionView];
@@ -77,8 +75,12 @@
     {
         case 0:
         {
-            WLDoublePublicityViewController *vc = [[WLDoublePublicityViewController alloc]init];
-            [self.navigationController pushViewController:vc animated:YES];
+            WLSegmentTableViewController *segVC = [[WLSegmentTableViewController alloc]init];
+            segVC.titles = @[@"行政处罚",@"行政处罚"];
+            WLDoublePublicityViewController *vc1 = [[WLDoublePublicityViewController alloc]init];
+            WLDoublePublicityViewController *vc2 = [[WLDoublePublicityViewController alloc]init];
+            segVC.controllers = @[vc1,vc2];
+            [self.navigationController pushViewController:segVC animated:YES];
             break;
         }
         case 1:
@@ -130,15 +132,6 @@
             break;
     }
     
-}
-
--(NSArray *)topViewContents
-{
-    if (_topViewContents == nil)
-    {
-        _topViewContents = [NSArray arrayWithObjects:[UIColor redColor],[UIColor yellowColor],[UIColor blueColor], nil];
-    }
-    return _topViewContents;
 }
 
 -(NSArray *)functionBtns

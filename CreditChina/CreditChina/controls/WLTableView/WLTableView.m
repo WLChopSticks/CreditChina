@@ -10,6 +10,7 @@
 #import "WLBaseTableView.h"
 #import "WLBaseTableViewCell.h"
 #import <objc/runtime.h>
+#import <Masonry.h>
 
 @interface WLTableView ()<UITableViewDataSource, UITableViewDelegate>
 
@@ -19,9 +20,9 @@
 
 @implementation WLTableView
 
-- (instancetype)initWithFrame: (CGRect)frame
+- (instancetype)init
 {
-    self = [super initWithFrame:frame];
+    self = [super init];
     if (self) {
         [self decorateUI];
     }
@@ -35,6 +36,10 @@
     [self addSubview:tableView];
     tableView.dataSource = self;
     tableView.delegate = self;
+    
+    [tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+       make.edges.equalTo(self);
+    }];
 }
 
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
