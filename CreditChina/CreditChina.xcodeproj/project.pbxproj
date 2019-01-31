@@ -33,7 +33,11 @@
 		9BC20BD62201922500732DE3 /* profile.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20BD52201922500732DE3 /* profile.svg */; };
 		9BC20BDA22019A5D00732DE3 /* WLScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BD922019A5D00732DE3 /* WLScrollView.m */; };
 		9BC20BDD22019DA700732DE3 /* WLDoublePublicityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BDC22019DA700732DE3 /* WLDoublePublicityViewController.m */; };
-		9BC20BE02201A75D00732DE3 /* WLTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BDF2201A75D00732DE3 /* WLTableView.m */; };
+		9BC20BEA2201DDE700732DE3 /* WLBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BE92201DDE700732DE3 /* WLBaseTableView.m */; };
+		9BC20BED2201DE4900732DE3 /* WLBaseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BEC2201DE4900732DE3 /* WLBaseTableViewCell.m */; };
+		9BC20BF32201E23C00732DE3 /* WLTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BF22201E23C00732DE3 /* WLTableView.m */; };
+		9BC20BFD22028DFB00732DE3 /* WLFourItemsCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BFB22028DFB00732DE3 /* WLFourItemsCell.m */; };
+		9BC20BFE22028DFB00732DE3 /* WLFourItemsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20BFC22028DFB00732DE3 /* WLFourItemsCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,8 +106,15 @@
 		9BC20BD922019A5D00732DE3 /* WLScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLScrollView.m; sourceTree = "<group>"; };
 		9BC20BDB22019DA700732DE3 /* WLDoublePublicityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLDoublePublicityViewController.h; sourceTree = "<group>"; };
 		9BC20BDC22019DA700732DE3 /* WLDoublePublicityViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLDoublePublicityViewController.m; sourceTree = "<group>"; };
-		9BC20BDE2201A75D00732DE3 /* WLTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLTableView.h; sourceTree = "<group>"; };
-		9BC20BDF2201A75D00732DE3 /* WLTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLTableView.m; sourceTree = "<group>"; };
+		9BC20BE82201DDE700732DE3 /* WLBaseTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLBaseTableView.h; sourceTree = "<group>"; };
+		9BC20BE92201DDE700732DE3 /* WLBaseTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLBaseTableView.m; sourceTree = "<group>"; };
+		9BC20BEB2201DE4900732DE3 /* WLBaseTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLBaseTableViewCell.h; sourceTree = "<group>"; };
+		9BC20BEC2201DE4900732DE3 /* WLBaseTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLBaseTableViewCell.m; sourceTree = "<group>"; };
+		9BC20BF12201E23C00732DE3 /* WLTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLTableView.h; sourceTree = "<group>"; };
+		9BC20BF22201E23C00732DE3 /* WLTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLTableView.m; sourceTree = "<group>"; };
+		9BC20BFA22028DFA00732DE3 /* WLFourItemsCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLFourItemsCell.h; sourceTree = "<group>"; };
+		9BC20BFB22028DFB00732DE3 /* WLFourItemsCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLFourItemsCell.m; sourceTree = "<group>"; };
+		9BC20BFC22028DFB00732DE3 /* WLFourItemsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLFourItemsCell.xib; sourceTree = "<group>"; };
 		DD4A422AB8ECC4E7AD688F7F /* Pods-CreditChina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditChina.debug.xcconfig"; path = "Target Support Files/Pods-CreditChina/Pods-CreditChina.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -294,12 +305,35 @@
 		9BC20BD722019A3F00732DE3 /* controls */ = {
 			isa = PBXGroup;
 			children = (
+				9BC20BE12201C0FD00732DE3 /* WLTableView */,
+				9BC20BF42202899400732DE3 /* WLTableViewCell */,
 				9BC20BD822019A5D00732DE3 /* WLScrollView.h */,
 				9BC20BD922019A5D00732DE3 /* WLScrollView.m */,
-				9BC20BDE2201A75D00732DE3 /* WLTableView.h */,
-				9BC20BDF2201A75D00732DE3 /* WLTableView.m */,
 			);
 			path = controls;
+			sourceTree = "<group>";
+		};
+		9BC20BE12201C0FD00732DE3 /* WLTableView */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20BF12201E23C00732DE3 /* WLTableView.h */,
+				9BC20BF22201E23C00732DE3 /* WLTableView.m */,
+				9BC20BE82201DDE700732DE3 /* WLBaseTableView.h */,
+				9BC20BE92201DDE700732DE3 /* WLBaseTableView.m */,
+				9BC20BEB2201DE4900732DE3 /* WLBaseTableViewCell.h */,
+				9BC20BEC2201DE4900732DE3 /* WLBaseTableViewCell.m */,
+			);
+			path = WLTableView;
+			sourceTree = "<group>";
+		};
+		9BC20BF42202899400732DE3 /* WLTableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				9BC20BFA22028DFA00732DE3 /* WLFourItemsCell.h */,
+				9BC20BFB22028DFB00732DE3 /* WLFourItemsCell.m */,
+				9BC20BFC22028DFB00732DE3 /* WLFourItemsCell.xib */,
+			);
+			path = WLTableViewCell;
 			sourceTree = "<group>";
 		};
 		DDCCA9A590C475E30E67E230 /* Frameworks */ = {
@@ -425,6 +459,7 @@
 				9BC20BD02201919B00732DE3 /* home.svg in Resources */,
 				9BC20BD22201921500732DE3 /* focus.svg in Resources */,
 				9BC20A2B21FF1B8C00732DE3 /* LaunchScreen.storyboard in Resources */,
+				9BC20BFE22028DFB00732DE3 /* WLFourItemsCell.xib in Resources */,
 				9BC20A5622000D8A00732DE3 /* WLLogInViewController.xib in Resources */,
 				9BC20A2821FF1B8C00732DE3 /* Assets.xcassets in Resources */,
 				9BC20A2621FF1B8B00732DE3 /* Main.storyboard in Resources */,
@@ -517,20 +552,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BC20BDA22019A5D00732DE3 /* WLScrollView.m in Sources */,
+				9BC20BEA2201DDE700732DE3 /* WLBaseTableView.m in Sources */,
 				9BC20A60220017D400732DE3 /* WLBaseNavigationViewController.m in Sources */,
 				9BC20A642200194400732DE3 /* WLCommonTool.m in Sources */,
 				9BC20BBB2201848B00732DE3 /* WLBaseTabBarViewController.m in Sources */,
+				9BC20BFD22028DFB00732DE3 /* WLFourItemsCell.m in Sources */,
 				9BC20A2321FF1B8B00732DE3 /* ViewController.m in Sources */,
 				9BC20BC7220187E400732DE3 /* WLProfileViewController.m in Sources */,
 				9BC20A5522000D8A00732DE3 /* WLLogInViewController.m in Sources */,
 				9BC20BCA2201886D00732DE3 /* WLExhibitonViewController.m in Sources */,
+				9BC20BED2201DE4900732DE3 /* WLBaseTableViewCell.m in Sources */,
 				9BC20BC4220187D000732DE3 /* WLProfileCreditViewController.m in Sources */,
 				9BC20BDD22019DA700732DE3 /* WLDoublePublicityViewController.m in Sources */,
+				9BC20BF32201E23C00732DE3 /* WLTableView.m in Sources */,
 				9BC20BC1220187B400732DE3 /* WLUserFocusViewController.m in Sources */,
 				9BC20A2E21FF1B8C00732DE3 /* main.m in Sources */,
 				9BC20BB82201804200732DE3 /* WLNewFeatureViewController.m in Sources */,
 				9BC20A61220017D400732DE3 /* WLBaseUIViewController.m in Sources */,
-				9BC20BE02201A75D00732DE3 /* WLTableView.m in Sources */,
 				9BC20A2021FF1B8B00732DE3 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

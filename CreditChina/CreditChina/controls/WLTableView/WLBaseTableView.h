@@ -1,5 +1,5 @@
 //
-//  WLTableView.h
+//  WLBaseTableView.h
 //  CreditChina
 //
 //  Created by 王磊 on 2019/1/30.
@@ -10,9 +10,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface WLTableView : UIView
-
-@property (nonatomic, weak) UITableView *tableView;
+@interface WLBaseTableView : UITableView
 
 @end
 

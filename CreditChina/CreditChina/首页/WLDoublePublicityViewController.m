@@ -7,9 +7,10 @@
 //
 
 #import "WLDoublePublicityViewController.h"
+#import "WLFourItemsCell.h"
 #import "WLTableView.h"
 
-@interface WLDoublePublicityViewController ()
+@interface WLDoublePublicityViewController ()<wlTableViewDelegate>
 
 @end
 
@@ -18,8 +19,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    [self decorateUI];
+    
+}
+
+- (void)decorateUI
+{
+    self.title = @"双公示展示";
     WLTableView *tableView = [[WLTableView alloc]initWithFrame:self.view.bounds];
+    tableView.cellClass = [WLFourItemsCell class];
+    tableView.rowsData = @[@{@"123":@"234",@"12s3":@"234",@"1s23":@"234",@"1q23":@"234"},@{@"123":@"234"},@{@"123":@"234"},@{@"123":@"234"}];
+    tableView.delegate = self;
     [self.view addSubview:tableView];
+}
+
+-(void)wlTableView:(UITableView *)tableView didSelectCellAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSLog(@"点击了cell %ld", indexPath.row);
 }
 
 /*
