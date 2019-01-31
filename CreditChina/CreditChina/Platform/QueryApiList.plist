@@ -9,57 +9,7 @@
 		<string>formal,http://47.104.107.196:18070</string>
 		<string>test,http://47.104.85.148:18070</string>
 	</array>
-	<key>QuickLogin</key>
-	<string>{host}/ckdhd/quicklogin_quicklogin.action</string>
-	<key>CompletePrivateInformation</key>
-	<string>{host}/ckdhd/updateUser.action</string>
-	<key>InitWePay</key>
-	<string>{host}/ckdhd/addWxPayHy.action</string>
-	<key>AquireCityInformation</key>
-	<string>{host}/ckdhd/quickCs.action</string>
 	<key>AquireStationsOfCity</key>
 	<string>{host}/ckdhd/queryCsZd.action</string>
-	<key>UploadPaidResult</key>
-	<string>{host}/ckdhd/queryBljlPayRusult.action</string>
-	<key>ReturnDeposit</key>
-	<string>{host}/ckdhd/tksq.action</string>
-	<key>ExchangeChargerProgress</key>
-	<string>{host}/ckdhd/HdlcCz.action</string>
-	<key>AquirePriceDetailInformation</key>
-	<string>{host}/ckdhd/queryFyxx.action</string>
-	<key>AquireCheckSMS</key>
-	<string>{host}/ckdhd/sendShortMessage.action</string>
-	<key>AquireExchangeChargerRecord</key>
-	<string>{host}/ckdhd/Hdcjl.action</string>
-	<key>ChangeTelephoneNumber</key>
-	<string>{host}/ckdhd/updateUserPhone.action</string>
-	<key>QingLogin</key>
-	<string>{host}/ckdhd/qLogin.action</string>
-	<key>AquireExchangeTimesEveryday</key>
-	<string>{host}/ckdhd/HdcjlCs.action</string>
-	<key>JudgeAvailableOfTelephoneNumber</key>
-	<string>{host}/ckdhd/sendShortMessageU.action</string>
-	<key>AquirePaidRecordList</key>
-	<string>{host}/ckdhd/queryJfjl.action</string>
-	<key>UserAgreement</key>
-	<string>{host}/ckdhd/portal/pages/yhxy/yhxy.jsp</string>
-	<key>PurchaseIntroduction</key>
-	<string>{host}/ckdhd/portal/pages/gmsm/gmsm.jsp</string>
-	<key>DepositIntrduction</key>
-	<string>{host}/ckdhd/portal/pages/yjsm/yjsm.jsp</string>
-	<key>AboutUs</key>
-	<string>{host}/ckdhd/portal/pages/gywm/gywm.jsp</string>
-	<key>AquireExchangeRentMotorRecord</key>
-	<string>{host}/ckdhd/Hddcjl.action</string>
-	<key>AquireExistingBankCard</key>
-	<string>{host}/ckdhd/queryyhk.action</string>
-	<key>AddBankCardInfo</key>
-	<string>{host}/ckdhd/insertyhk.action</string>
-	<key>UpdateBankCardInfo</key>
-	<string>{host}/ckdhd/updateyhk.action</string>
-	<key>AquireRefundProgress</key>
-	<string>{host}/ckdhd/queryTklcjl.action</string>
-	<key>AddPushClientEquipment</key>
-	<string>{host}/ckdhd/addPushClientEquipment.action</string>
 </dict>
 </plist>

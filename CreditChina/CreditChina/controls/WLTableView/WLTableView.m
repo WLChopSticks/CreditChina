@@ -42,6 +42,11 @@
     }];
 }
 
+-(void)reloadData
+{
+    [self.wltableView reloadData];
+}
+
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
     return 1;
