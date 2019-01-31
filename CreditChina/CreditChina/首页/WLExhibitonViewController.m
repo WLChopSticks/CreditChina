@@ -8,6 +8,13 @@
 
 #import "WLExhibitonViewController.h"
 #import "WLDoublePublicityViewController.h"
+#import "WLRewardsAndPunishListViewController.h"
+#import "WLRewardsAndPunishExampleViewController.h"
+#import "WLCreditReportViewController.h"
+#import "WLNewsViewController.h"
+#import "WLCreditPromiseViewController.h"
+#import "WLRelatedPolicyViewController.h"
+#import "WLQueryCreditInfoViewController.h"
 
 @interface WLExhibitonViewController ()
 
@@ -65,9 +72,64 @@
 
 - (void)functionBtnDidClicking: (UIButton *)sender
 {
-    NSLog(@"点击了功能按钮%d", sender.tag);
-    WLDoublePublicityViewController *vc = [[WLDoublePublicityViewController alloc]init];
-    [self.navigationController pushViewController:vc animated:YES];
+    NSLog(@"点击了功能按钮%ld", (long)sender.tag);
+    switch (sender.tag)
+    {
+        case 0:
+        {
+            WLDoublePublicityViewController *vc = [[WLDoublePublicityViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 1:
+        {
+            WLRewardsAndPunishListViewController *vc = [[WLRewardsAndPunishListViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 2:
+        {
+            WLRewardsAndPunishExampleViewController *vc = [[WLRewardsAndPunishExampleViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 3:
+        {
+            WLCreditReportViewController *vc = [[WLCreditReportViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 4:
+        {
+            WLNewsViewController *vc = [[WLNewsViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 5:
+        {
+            WLCreditPromiseViewController *vc = [[WLCreditPromiseViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 6:
+        {
+            WLRelatedPolicyViewController *vc = [[WLRelatedPolicyViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+        case 7:
+        {
+            WLQueryCreditInfoViewController *vc = [[WLQueryCreditInfoViewController alloc]init];
+            [self.navigationController pushViewController:vc animated:YES];
+            break;
+        }
+            
+        
+            
+        default:
+            break;
+    }
+    
 }
 
 -(NSArray *)topViewContents

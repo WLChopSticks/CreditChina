@@ -8,7 +8,6 @@
 
 #import "WLBaseTableView.h"
 #import "WLBaseTableViewCell.h"
-#import "WLTableViewDataSource.h"
 
 
 @interface WLBaseTableView ()<UITableViewDelegate>

@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong) NSArray *rowsData;
 @property (nonatomic, weak) id<wlTableViewDelegate> delegate;
 
+- (void)registNibForCell: (NSString *)nibName;
+
 @end
 
 NS_ASSUME_NONNULL_END

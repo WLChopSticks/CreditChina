@@ -1,34 +1,33 @@
 //
-//  WLDoublePublicityViewController.m
+//  WLRewardsAndPunishListViewController.m
 //  CreditChina
 //
-//  Created by 王磊 on 2019/1/30.
+//  Created by 王磊 on 2019/1/31.
 //  Copyright © 2019 wanglei. All rights reserved.
 //
 
-#import "WLDoublePublicityViewController.h"
-#import "WLFourItemsCell.h"
+#import "WLRewardsAndPunishListViewController.h"
 #import "WLTableView.h"
+#import "WLFourItemsCell.h"
 
-@interface WLDoublePublicityViewController ()<wlTableViewDelegate>
+@interface WLRewardsAndPunishListViewController ()<wlTableViewDelegate>
 
 @end
 
-@implementation WLDoublePublicityViewController
+@implementation WLRewardsAndPunishListViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [self decorateUI];
-    
 }
 
 - (void)decorateUI
 {
-    self.title = @"双公示展示";
+    self.title = @"联合奖惩名单";
     WLTableView *tableView = [[WLTableView alloc]initWithFrame:self.view.bounds];
     tableView.cellClass = [WLFourItemsCell class];
-    tableView.rowsData = @[@{@"公司名":@"234",@"审批类别":@"普通",@"许可文件号":@"234",@"许可行政机构":@"234"},@{@"公司名":@"234",@"审批类别":@"普通",@"许可文件号":@"234",@"许可行政机构":@"234"},@{@"公司名":@"234",@"审批类别":@"普通",@"许可文件号":@"234",@"许可行政机构":@"234"}];
+    tableView.rowsData = @[@{@"公司名":@"234",@"接收时间":@"12",@"接收内容":@"234"},@{@"公司名":@"234",@"接收时间":@"12",@"接收内容":@"234"},@{@"公司名":@"234",@"接收时间":@"12",@"接收内容":@"234"}];
     tableView.delegate = self;
     [self.view addSubview:tableView];
 }

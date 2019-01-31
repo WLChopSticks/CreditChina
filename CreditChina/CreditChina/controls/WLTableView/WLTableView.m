@@ -13,6 +13,8 @@
 
 @interface WLTableView ()<UITableViewDataSource, UITableViewDelegate>
 
+@property (nonatomic, weak) WLBaseTableView *wltableView;
+
 @end
 
 @implementation WLTableView
@@ -29,6 +31,7 @@
 - (void)decorateUI
 {
     WLBaseTableView *tableView = [[WLBaseTableView alloc]initWithFrame:self.bounds style:UITableViewStylePlain];
+    self.wltableView = tableView;
     [self addSubview:tableView];
     tableView.dataSource = self;
     tableView.delegate = self;
@@ -82,6 +85,13 @@
     {
         [self.delegate wlTableView:tableView didSelectCellAtIndexPath:indexPath];
     }
+}
+
+- (void)registNibForCell: (NSString *)nibName
+{
+    Class class = self.cellClass;
+    NSString *className = [NSString stringWithUTF8String:class_getName(class)];
+    [self.wltableView registerNib:[UINib nibWithNibName:nibName bundle:nil] forCellReuseIdentifier:className];
 }
 /*
 // Only override drawRect: if you perform custom drawing.
