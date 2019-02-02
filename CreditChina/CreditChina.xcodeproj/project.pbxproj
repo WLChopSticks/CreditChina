@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7BB17B9A6409CA6E79BB1835 /* libPods-CreditChina.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 57EAABDB20D4B2230A562DBB /* libPods-CreditChina.a */; };
+		9BA009ED2205D6B700D1FFD9 /* WLRedAndBlackListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA009EC2205D6B700D1FFD9 /* WLRedAndBlackListViewController.m */; };
+		9BA009F02205D86300D1FFD9 /* WLTFourItemsWithTitleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BA009EF2205D86300D1FFD9 /* WLTFourItemsWithTitleCell.m */; };
 		9BC20A2021FF1B8B00732DE3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A1F21FF1B8B00732DE3 /* AppDelegate.m */; };
 		9BC20A2321FF1B8B00732DE3 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20A2221FF1B8B00732DE3 /* ViewController.m */; };
 		9BC20A2621FF1B8B00732DE3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20A2421FF1B8B00732DE3 /* Main.storyboard */; };
@@ -73,6 +75,10 @@
 /* Begin PBXFileReference section */
 		57EAABDB20D4B2230A562DBB /* libPods-CreditChina.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-CreditChina.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8E0A1888FD01D43C53A7F67A /* Pods-CreditChina.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditChina.release.xcconfig"; path = "Target Support Files/Pods-CreditChina/Pods-CreditChina.release.xcconfig"; sourceTree = "<group>"; };
+		9BA009EB2205D6B700D1FFD9 /* WLRedAndBlackListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLRedAndBlackListViewController.h; sourceTree = "<group>"; };
+		9BA009EC2205D6B700D1FFD9 /* WLRedAndBlackListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLRedAndBlackListViewController.m; sourceTree = "<group>"; };
+		9BA009EE2205D86300D1FFD9 /* WLTFourItemsWithTitleCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLTFourItemsWithTitleCell.h; sourceTree = "<group>"; };
+		9BA009EF2205D86300D1FFD9 /* WLTFourItemsWithTitleCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLTFourItemsWithTitleCell.m; sourceTree = "<group>"; };
 		9BC20A1B21FF1B8B00732DE3 /* CreditChina.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CreditChina.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9BC20A1E21FF1B8B00732DE3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		9BC20A1F21FF1B8B00732DE3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -297,6 +303,8 @@
 				9BC20BDC22019DA700732DE3 /* WLDoublePublicityViewController.m */,
 				9BC20C042202A6F000732DE3 /* WLRewardsAndPunishListViewController.h */,
 				9BC20C052202A6F000732DE3 /* WLRewardsAndPunishListViewController.m */,
+				9BA009EB2205D6B700D1FFD9 /* WLRedAndBlackListViewController.h */,
+				9BA009EC2205D6B700D1FFD9 /* WLRedAndBlackListViewController.m */,
 				9BC20C072202A73B00732DE3 /* WLRewardsAndPunishExampleViewController.h */,
 				9BC20C082202A73B00732DE3 /* WLRewardsAndPunishExampleViewController.m */,
 				9BC20C0A2202A76600732DE3 /* WLCreditReportViewController.h */,
@@ -391,6 +399,8 @@
 				9BC20BFA22028DFA00732DE3 /* WLFourItemsCell.h */,
 				9BC20BFB22028DFB00732DE3 /* WLFourItemsCell.m */,
 				9BC20BFC22028DFB00732DE3 /* WLFourItemsCell.xib */,
+				9BA009EE2205D86300D1FFD9 /* WLTFourItemsWithTitleCell.h */,
+				9BA009EF2205D86300D1FFD9 /* WLTFourItemsWithTitleCell.m */,
 				9BC20C1F2202AED400732DE3 /* WLTitleContentTimeCell.h */,
 				9BC20C202202AED400732DE3 /* WLTitleContentTimeCell.m */,
 				9BC20C212202AED400732DE3 /* WLTitleContentTimeCell.xib */,
@@ -630,8 +640,10 @@
 				9BC20C092202A73B00732DE3 /* WLRewardsAndPunishExampleViewController.m in Sources */,
 				9BC20BDA22019A5D00732DE3 /* WLScrollView.m in Sources */,
 				9BC20C062202A6F000732DE3 /* WLRewardsAndPunishListViewController.m in Sources */,
+				9BA009F02205D86300D1FFD9 /* WLTFourItemsWithTitleCell.m in Sources */,
 				9BC20C0C2202A76600732DE3 /* WLCreditReportViewController.m in Sources */,
 				9BC20C012202A5B800732DE3 /* WLNetworkTool.m in Sources */,
+				9BA009ED2205D6B700D1FFD9 /* WLRedAndBlackListViewController.m in Sources */,
 				9BC20C3422031D4500732DE3 /* WLUserFocusTableController.m in Sources */,
 				9BC20BEA2201DDE700732DE3 /* WLBaseTableView.m in Sources */,
 				9BC20C192202A7E300732DE3 /* WLQueryCreditInfoViewController.m in Sources */,

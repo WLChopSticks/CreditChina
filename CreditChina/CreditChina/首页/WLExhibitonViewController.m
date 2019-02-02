@@ -101,6 +101,7 @@
             WLRewardsAndPunishListViewController *vc1 = [[WLRewardsAndPunishListViewController alloc]init];
             WLRewardsAndPunishListViewController *vc2 = [[WLRewardsAndPunishListViewController alloc]init];
             segVC.controllers = @[vc1,vc2];
+            segVC.title = @"联合奖惩(红黑名单)";
             [self.navigationController pushViewController:segVC animated:YES];
             break;
         }
