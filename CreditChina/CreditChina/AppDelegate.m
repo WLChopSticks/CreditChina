@@ -35,11 +35,11 @@
     userFocusVC.title = @"用户关注";
     WLBaseNavigationViewController *nav2 = [[WLBaseNavigationViewController alloc]initWithRootViewController:userFocusVC];
     
-    WLProfileViewController *profileVC = [[WLProfileViewController alloc]init];
+    WLProfileCreditViewController *profileVC = [[WLProfileCreditViewController alloc]init];
     profileVC.title = @"个人信用";
     WLBaseNavigationViewController *nav3 = [[WLBaseNavigationViewController alloc]initWithRootViewController:profileVC];
     
-    WLProfileCreditViewController *profileCreditVC = [[WLProfileCreditViewController alloc]init];
+    WLProfileViewController *profileCreditVC = [[WLProfileViewController alloc]init];
     profileCreditVC.title = @"我的";
     WLBaseNavigationViewController *nav4 = [[WLBaseNavigationViewController alloc]initWithRootViewController:profileCreditVC];
     

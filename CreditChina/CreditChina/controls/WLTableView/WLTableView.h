@@ -9,7 +9,10 @@
 #import <UIKit/UIKit.h>
 
 @protocol wlTableViewDelegate <NSObject>
+@optional
+- (UITableViewCell *)wltableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
 - (void)wlTableView: (UITableView *)tableView didSelectCellAtIndexPath: (NSIndexPath *)indexPath;
+-(UIView *)wltableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section;
 
 @end
 

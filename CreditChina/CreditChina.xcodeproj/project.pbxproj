@@ -53,6 +53,8 @@
 		9BC20C2B2202E32000732DE3 /* HGSegmentedPageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20C292202E32000732DE3 /* HGSegmentedPageViewController.m */; };
 		9BC20C31220315BB00732DE3 /* WLSegmentTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20C2F220315BA00732DE3 /* WLSegmentTableViewController.m */; };
 		9BC20C3422031D4500732DE3 /* WLUserFocusTableController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20C3322031D4500732DE3 /* WLUserFocusTableController.m */; };
+		9BC20C3B22034C7C00732DE3 /* WLImageTitleAccessCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20C3922034C7C00732DE3 /* WLImageTitleAccessCell.m */; };
+		9BC20C3C22034C7C00732DE3 /* WLImageTitleAccessCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20C3A22034C7C00732DE3 /* WLImageTitleAccessCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -159,6 +161,9 @@
 		9BC20C30220315BA00732DE3 /* WLSegmentTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WLSegmentTableViewController.h; sourceTree = "<group>"; };
 		9BC20C3222031D4500732DE3 /* WLUserFocusTableController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLUserFocusTableController.h; sourceTree = "<group>"; };
 		9BC20C3322031D4500732DE3 /* WLUserFocusTableController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLUserFocusTableController.m; sourceTree = "<group>"; };
+		9BC20C3822034C7C00732DE3 /* WLImageTitleAccessCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLImageTitleAccessCell.h; sourceTree = "<group>"; };
+		9BC20C3922034C7C00732DE3 /* WLImageTitleAccessCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLImageTitleAccessCell.m; sourceTree = "<group>"; };
+		9BC20C3A22034C7C00732DE3 /* WLImageTitleAccessCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WLImageTitleAccessCell.xib; sourceTree = "<group>"; };
 		DD4A422AB8ECC4E7AD688F7F /* Pods-CreditChina.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CreditChina.debug.xcconfig"; path = "Target Support Files/Pods-CreditChina/Pods-CreditChina.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -401,6 +406,9 @@
 				9BC20C1F2202AED400732DE3 /* WLTitleContentTimeCell.h */,
 				9BC20C202202AED400732DE3 /* WLTitleContentTimeCell.m */,
 				9BC20C212202AED400732DE3 /* WLTitleContentTimeCell.xib */,
+				9BC20C3822034C7C00732DE3 /* WLImageTitleAccessCell.h */,
+				9BC20C3922034C7C00732DE3 /* WLImageTitleAccessCell.m */,
+				9BC20C3A22034C7C00732DE3 /* WLImageTitleAccessCell.xib */,
 			);
 			path = WLTableViewCell;
 			sourceTree = "<group>";
@@ -540,6 +548,7 @@
 				9BC20BD02201919B00732DE3 /* home.svg in Resources */,
 				9BC20BD22201921500732DE3 /* focus.svg in Resources */,
 				9BC20C232202AED400732DE3 /* WLTitleContentTimeCell.xib in Resources */,
+				9BC20C3C22034C7C00732DE3 /* WLImageTitleAccessCell.xib in Resources */,
 				9BC20A2B21FF1B8C00732DE3 /* LaunchScreen.storyboard in Resources */,
 				9BC20BFE22028DFB00732DE3 /* WLFourItemsCell.xib in Resources */,
 				9BC20C032202A5E000732DE3 /* QueryApiList.plist in Resources */,
@@ -662,6 +671,7 @@
 				9BC20C132202A79C00732DE3 /* WLCreditPromiseViewController.m in Sources */,
 				9BC20BF32201E23C00732DE3 /* WLTableView.m in Sources */,
 				9BC20BC1220187B400732DE3 /* WLUserFocusViewController.m in Sources */,
+				9BC20C3B22034C7C00732DE3 /* WLImageTitleAccessCell.m in Sources */,
 				9BC20A2E21FF1B8C00732DE3 /* main.m in Sources */,
 				9BC20BB82201804200732DE3 /* WLNewFeatureViewController.m in Sources */,
 				9BC20A61220017D400732DE3 /* WLBaseUIViewController.m in Sources */,

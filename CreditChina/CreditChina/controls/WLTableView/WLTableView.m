@@ -60,23 +60,31 @@
 /** cell样式 */
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    
-    Class class = self.cellClass;
-    
-    NSString *className = [NSString stringWithUTF8String:class_getName(class)];
-    
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:className];
-    
-    if (!cell)
+    UITableViewCell *cell;
+    if ([self.delegate respondsToSelector:@selector(wltableView:cellForRowAtIndexPath:)])
     {
-        cell = [[class alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:className];
+        cell = [self.delegate wltableView:tableView cellForRowAtIndexPath:indexPath];
+    }else
+    {
+        Class class = self.cellClass;
+        
+        NSString *className = [NSString stringWithUTF8String:class_getName(class)];
+        
+        cell = [tableView dequeueReusableCellWithIdentifier:className];
+        
+        if (!cell)
+        {
+            cell = [[class alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:className];
+        }
+        
+        if ([cell isKindOfClass:[WLBaseTableViewCell class]])
+        {
+            WLBaseTableViewCell *customCell = (WLBaseTableViewCell *)cell;
+            [customCell fillCellContent:self.rowsData[indexPath.row]];
+        }
     }
     
-    if ([cell isKindOfClass:[WLBaseTableViewCell class]])
-    {
-        WLBaseTableViewCell *customCell = (WLBaseTableViewCell *)cell;
-        [customCell fillCellContent:self.rowsData[indexPath.row]];
-    }
+    
 //    cell..text = self.rowsData[indexPath.row];
     
     return cell;
@@ -96,6 +104,8 @@
         [self.delegate wlTableView:tableView didSelectCellAtIndexPath:indexPath];
     }
 }
+
+
 
 - (void)registNibForCell: (NSString *)nibName
 {

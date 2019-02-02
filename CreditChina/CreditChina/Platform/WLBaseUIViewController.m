@@ -8,7 +8,7 @@
 
 #import "WLBaseUIViewController.h"
 
-@interface WLBaseUIViewController ()
+@interface WLBaseUIViewController ()<UINavigationControllerDelegate>
 
 @end
 
@@ -32,12 +32,12 @@
     self.navigationController.navigationBar.translucent = NO;
 //    self.navigationController.navigationBar.barTintColor = [UIColor whiteColor];
 //    self.navigationController.navigationBar.barStyle = UIBarStyleDefault;
-
 }
 
 -(void)viewWillDisappear:(BOOL)animated
 {
     [super viewWillDisappear:animated];
+    
 
 }
 
