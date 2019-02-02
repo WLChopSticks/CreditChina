@@ -8,6 +8,8 @@
 
 #import "WLFourItemsCell.h"
 
+#define LabelHeight 30
+
 @interface WLFourItemsCell ()
 
 @property (nonatomic, strong) NSDictionary *contentDict;
@@ -30,13 +32,16 @@
         
         UILabel *keyLabel = [[UILabel alloc]init];
         keyLabel.text = key;
+        keyLabel.font = [UIFont systemFontOfSize:13];
         [self addSubview:keyLabel];
         UILabel *valueLabel = [[UILabel alloc]init];
         valueLabel.text = contentDict[key];
+        valueLabel.font = [UIFont systemFontOfSize:13];
         [self addSubview:valueLabel];
         
-        keyLabel.frame = CGRectMake(0, index * 50, 100, 50);
-        valueLabel.frame  = CGRectMake(keyLabel.frame.size.width, index * 50, 100, 50);
+        keyLabel.frame = CGRectMake(10, index * LabelHeight, 100, LabelHeight);
+        int valueLabelWidth = [UIScreen mainScreen].bounds.size.width - CGRectGetMaxX(keyLabel.frame) - 20;
+        valueLabel.frame  = CGRectMake(keyLabel.frame.size.width + 10, index * LabelHeight,valueLabelWidth , LabelHeight);
         index++;
         
     }
@@ -45,7 +50,7 @@
 +(CGFloat)tableView:(UITableView *)tableView rowHeightAtIndexPath:(NSIndexPath *)indexPath withContentDict:(NSDictionary *)dict
 {
     
-    return 50 * dict.count;
+    return LabelHeight * dict.count;
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

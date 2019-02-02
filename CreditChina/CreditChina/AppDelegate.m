@@ -28,20 +28,24 @@
     // Override point for customization after application launch.
     self.window = [[UIWindow alloc]init];
     WLExhibitonViewController *exhibitionVC = [[WLExhibitonViewController alloc]init];
-    exhibitionVC.title = @"首页";
+    exhibitionVC.title = @"信用辽宁(公众版)";
     WLBaseNavigationViewController *nav1 = [[WLBaseNavigationViewController alloc]initWithRootViewController:exhibitionVC];
+    nav1.tabBarItem  = [[UITabBarItem alloc]initWithTitle:@"首页" image:[UIImage imageNamed:@"home"] tag:0];
     
     WLUserFocusViewController *userFocusVC = [[WLUserFocusViewController alloc]init];
     userFocusVC.title = @"用户关注";
     WLBaseNavigationViewController *nav2 = [[WLBaseNavigationViewController alloc]initWithRootViewController:userFocusVC];
+    nav2.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"用户关注" image:[UIImage imageNamed:@"focus"] tag:1];
     
     WLProfileCreditViewController *profileVC = [[WLProfileCreditViewController alloc]init];
     profileVC.title = @"个人信用";
     WLBaseNavigationViewController *nav3 = [[WLBaseNavigationViewController alloc]initWithRootViewController:profileVC];
+    nav3.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"个人信用" image:[UIImage imageNamed:@"user_creidt"] tag:2];
     
     WLProfileViewController *profileCreditVC = [[WLProfileViewController alloc]init];
-    profileCreditVC.title = @"我的";
+    profileCreditVC.title = @"个人中心";
     WLBaseNavigationViewController *nav4 = [[WLBaseNavigationViewController alloc]initWithRootViewController:profileCreditVC];
+    nav4.tabBarItem = [[UITabBarItem alloc]initWithTitle:@"个人中心" image:[UIImage imageNamed:@"profile"] tag:3];
     
     WLBaseTabBarViewController *tabVC = [[WLBaseTabBarViewController alloc]init];
     tabVC.viewControllers = @[nav1, nav2, nav3, nav4];

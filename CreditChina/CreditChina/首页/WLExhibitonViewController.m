@@ -35,8 +35,10 @@
 
 - (void)decorateUI
 {
-//    UIScrollView *topView = [[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, Screen_Width, Screen_Height * 0.2)];
-    SDCycleScrollView *topView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(0, 0, Screen_Width, Screen_Height * 0.25) delegate:self placeholderImage:[UIImage imageNamed:@"temp"]];
+    UIBarButtonItem *emblem = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"emblem"] style:UIBarButtonItemStylePlain target:nil action:nil];
+    self.navigationItem.leftBarButtonItem = emblem;
+    
+    SDCycleScrollView *topView = [SDCycleScrollView cycleScrollViewWithFrame:CGRectMake(10, 10, Screen_Width-20, Screen_Height * 0.25) delegate:self placeholderImage:[UIImage imageNamed:@"temp"]];
     NSArray *imagesURLStrings = @[
                                   @"https://ss2.baidu.com/-vo3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a4b3d7085dee3d6d2293d48b252b5910/0e2442a7d933c89524cd5cd4d51373f0830200ea.jpg",
                                   @"https://ss0.baidu.com/-Po3dSag_xI4khGko9WTAnF6hhy/super/whfpf%3D425%2C260%2C50/sign=a41eb338dd33c895a62bcb3bb72e47c2/5fdf8db1cb134954a2192ccb524e9258d1094a1e.jpg",
@@ -45,22 +47,30 @@
     topView.imageURLStringsGroup = imagesURLStrings;
     [self.view addSubview:topView];
     
-    UIView *functionView = [[UIView alloc]initWithFrame:CGRectMake(0, topView.frame.size.height, Screen_Width, Screen_Height - topView.frame.size.height)];
+    UIView *functionView = [[UIView alloc]initWithFrame:CGRectMake(0, topView.frame.size.height + 30, Screen_Width, Screen_Height - topView.frame.size.height)];
     [self.view addSubview:functionView];
-    functionView.backgroundColor = [UIColor purpleColor];
     
     for (int i = 0; i < self.functionBtns.count; i++)
     {
         UIButton *functionBtn = [[UIButton alloc]init];
+
         NSDictionary *dict = self.functionBtns[i];
         [functionBtn setTitle:dict[@"title"] forState:UIControlStateNormal];
+        [functionBtn setImage:[UIImage imageNamed:dict[@"image"]] forState:UIControlStateNormal];
+        functionBtn.titleLabel.font = [UIFont systemFontOfSize:13];
+        [functionBtn setTitleColor:[UIColor lightGrayColor] forState:UIControlStateNormal];
+        
         functionBtn.tag = i;
         [functionBtn addTarget:self action:@selector(functionBtnDidClicking:) forControlEvents:UIControlEventTouchUpInside];
         int width = Screen_Width * 0.5;
-        int height = 70;
+        int height = 80;
         int x = i % 2 == 0 ? 0 : Screen_Width * 0.5;
         int y = i / 2 * height;
         functionBtn.frame = CGRectMake(x, y, width, height);
+        
+        functionBtn.titleEdgeInsets = UIEdgeInsetsMake(5, -functionBtn.imageView.frame.size.width, -functionBtn.imageView.frame.size.height, 0);
+        functionBtn.imageEdgeInsets = UIEdgeInsetsMake(-functionBtn.titleLabel.intrinsicContentSize.height, 0, 0, -functionBtn.titleLabel.intrinsicContentSize.width);
+        
         [functionView addSubview:functionBtn];
         
     }
@@ -76,10 +86,11 @@
         case 0:
         {
             WLSegmentTableViewController *segVC = [[WLSegmentTableViewController alloc]init];
-            segVC.titles = @[@"行政处罚",@"行政处罚"];
+            segVC.titles = @[@"行政许可",@"行政处罚"];
             WLDoublePublicityViewController *vc1 = [[WLDoublePublicityViewController alloc]init];
             WLDoublePublicityViewController *vc2 = [[WLDoublePublicityViewController alloc]init];
             segVC.controllers = @[vc1,vc2];
+            segVC.title = @"双公示展示";
             [self.navigationController pushViewController:segVC animated:YES];
             break;
         }
@@ -136,8 +147,6 @@
             break;
         }
             
-        
-            
         default:
             break;
     }
@@ -149,14 +158,14 @@
     if (_functionBtns == nil)
     {
         NSMutableArray *arrTem = [NSMutableArray arrayWithCapacity:8];
-        [arrTem addObject:@{@"image":@"", @"title":@"双公示"}];
-        [arrTem addObject:@{@"image":@"", @"title":@"联合奖惩(红黑名单)"}];
-        [arrTem addObject:@{@"image":@"", @"title":@"联合奖惩(典型案例)"}];
-        [arrTem addObject:@{@"image":@"", @"title":@"信用报告"}];
-        [arrTem addObject:@{@"image":@"", @"title":@"新闻资讯"}];
-        [arrTem addObject:@{@"image":@"", @"title":@"信用承诺"}];
-        [arrTem addObject:@{@"image":@"", @"title":@"相关政策"}];
-        [arrTem addObject:@{@"image":@"", @"title":@"信用信息查询"}];
+        [arrTem addObject:@{@"image":@"DoublePublicity", @"title":@"双公示"}];
+        [arrTem addObject:@{@"image":@"RewardsAndPunish", @"title":@"联合奖惩(红黑名单)"}];
+        [arrTem addObject:@{@"image":@"RewardsAndPunish1", @"title":@"联合奖惩(典型案例)"}];
+        [arrTem addObject:@{@"image":@"creditReport", @"title":@"信用报告"}];
+        [arrTem addObject:@{@"image":@"newsIcon", @"title":@"新闻资讯"}];
+        [arrTem addObject:@{@"image":@"creditPromise", @"title":@"信用承诺"}];
+        [arrTem addObject:@{@"image":@"relatedPolicy", @"title":@"相关政策"}];
+        [arrTem addObject:@{@"image":@"queryInfo", @"title":@"信用信息查询"}];
         _functionBtns = [NSArray arrayWithArray:arrTem];
     }
     return _functionBtns;

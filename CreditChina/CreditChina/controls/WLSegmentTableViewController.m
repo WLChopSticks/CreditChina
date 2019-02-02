@@ -48,6 +48,9 @@
         _segmentedPageViewController.pageViewControllers = self.controllers;
         _segmentedPageViewController.categoryView.titles = self.titles;
         _segmentedPageViewController.categoryView.originalIndex = 0;
+        _segmentedPageViewController.categoryView.titleNomalFont = [UIFont systemFontOfSize:14];
+        _segmentedPageViewController.categoryView.titleSelectedFont = [UIFont systemFontOfSize:15];
+        _segmentedPageViewController.categoryView.height = 35;
     }
     return _segmentedPageViewController;
 }

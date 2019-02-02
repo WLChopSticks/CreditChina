@@ -29,7 +29,6 @@
 
 - (void)decorateUI
 {
-    self.title = @"双公示展示";
     WLTableView *tableView = [[WLTableView alloc]init];
     self.tableView = tableView;
     tableView.cellClass = [WLFourItemsCell class];
@@ -52,7 +51,7 @@
     NSString *URL = networkTool.queryAPIList[@"AquireStationsOfCity"];
     [networkTool POST_queryWithURL:URL andParameters:parameters success:^(id  _Nullable responseObject) {
 //        NSDictionary *result = (NSDictionary *)responseObject;
-        NSArray *arr = @[@{@"公司名":@"234",@"审批类别":@"普通",@"许可文件号":@"234",@"许可行政机构":@"234"},@{@"公司名":@"234",@"审批类别":@"普通",@"许可文件号":@"234",@"许可行政机构":@"234"},@{@"公司名":@"234",@"审批类别":@"普通",@"许可文件号":@"234",@"许可行政机构":@"234"},@{@"公司名":@"234",@"审批类别":@"普通",@"许可文件号":@"234",@"许可行政机构":@"234"},@{@"公司名":@"234",@"审批类别":@"普通",@"许可文件号":@"234",@"许可行政机构":@"234"}];
+        NSArray *arr = @[@{@"公司名":@"西安上镜服务有限公司",@"审核类型":@"核准",@"许可文书号":@"(2019)0006",@"许可机关":@"西安市城市管理局"},@{@"公司名":@"西安上镜服务有限公司",@"审核类型":@"核准",@"许可文书号":@"(2019)0006",@"许可机关":@"西安市城市管理局"},@{@"公司名":@"西安上镜服务有限公司",@"审核类型":@"核准",@"许可文书号":@"(2019)0006",@"许可机关":@"西安市城市管理局"},@{@"公司名":@"西安上镜服务有限公司",@"审核类型":@"核准",@"许可文书号":@"(2019)0006",@"许可机关":@"西安市城市管理局"}];
         self.tableView.rowsData = arr;
         [self.tableView reloadData];
     } failure:^(NSError *error) {

@@ -27,10 +27,6 @@
 		9BC20BC4220187D000732DE3 /* WLProfileCreditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BC3220187D000732DE3 /* WLProfileCreditViewController.m */; };
 		9BC20BC7220187E400732DE3 /* WLProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BC6220187E400732DE3 /* WLProfileViewController.m */; };
 		9BC20BCA2201886D00732DE3 /* WLExhibitonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BC92201886D00732DE3 /* WLExhibitonViewController.m */; };
-		9BC20BD02201919B00732DE3 /* home.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20BCF2201919B00732DE3 /* home.svg */; };
-		9BC20BD22201921500732DE3 /* focus.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20BD12201921500732DE3 /* focus.svg */; };
-		9BC20BD42201921E00732DE3 /* profileCredit.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20BD32201921E00732DE3 /* profileCredit.svg */; };
-		9BC20BD62201922500732DE3 /* profile.svg in Resources */ = {isa = PBXBuildFile; fileRef = 9BC20BD52201922500732DE3 /* profile.svg */; };
 		9BC20BDA22019A5D00732DE3 /* WLScrollView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BD922019A5D00732DE3 /* WLScrollView.m */; };
 		9BC20BDD22019DA700732DE3 /* WLDoublePublicityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BDC22019DA700732DE3 /* WLDoublePublicityViewController.m */; };
 		9BC20BEA2201DDE700732DE3 /* WLBaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BC20BE92201DDE700732DE3 /* WLBaseTableView.m */; };
@@ -115,10 +111,6 @@
 		9BC20BC6220187E400732DE3 /* WLProfileViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLProfileViewController.m; sourceTree = "<group>"; };
 		9BC20BC82201886D00732DE3 /* WLExhibitonViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLExhibitonViewController.h; sourceTree = "<group>"; };
 		9BC20BC92201886D00732DE3 /* WLExhibitonViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLExhibitonViewController.m; sourceTree = "<group>"; };
-		9BC20BCF2201919B00732DE3 /* home.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = home.svg; sourceTree = "<group>"; };
-		9BC20BD12201921500732DE3 /* focus.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = focus.svg; sourceTree = "<group>"; };
-		9BC20BD32201921E00732DE3 /* profileCredit.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = profileCredit.svg; sourceTree = "<group>"; };
-		9BC20BD52201922500732DE3 /* profile.svg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = profile.svg; sourceTree = "<group>"; };
 		9BC20BD822019A5D00732DE3 /* WLScrollView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLScrollView.h; sourceTree = "<group>"; };
 		9BC20BD922019A5D00732DE3 /* WLScrollView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WLScrollView.m; sourceTree = "<group>"; };
 		9BC20BDB22019DA700732DE3 /* WLDoublePublicityViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WLDoublePublicityViewController.h; sourceTree = "<group>"; };
@@ -362,10 +354,6 @@
 		9BC20BCE2201918B00732DE3 /* resources */ = {
 			isa = PBXGroup;
 			children = (
-				9BC20BCF2201919B00732DE3 /* home.svg */,
-				9BC20BD12201921500732DE3 /* focus.svg */,
-				9BC20BD32201921E00732DE3 /* profileCredit.svg */,
-				9BC20BD52201922500732DE3 /* profile.svg */,
 			);
 			path = resources;
 			sourceTree = "<group>";
@@ -543,10 +531,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9BC20BD42201921E00732DE3 /* profileCredit.svg in Resources */,
-				9BC20BD62201922500732DE3 /* profile.svg in Resources */,
-				9BC20BD02201919B00732DE3 /* home.svg in Resources */,
-				9BC20BD22201921500732DE3 /* focus.svg in Resources */,
 				9BC20C232202AED400732DE3 /* WLTitleContentTimeCell.xib in Resources */,
 				9BC20C3C22034C7C00732DE3 /* WLImageTitleAccessCell.xib in Resources */,
 				9BC20A2B21FF1B8C00732DE3 /* LaunchScreen.storyboard in Resources */,
